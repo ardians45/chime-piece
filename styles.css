@@ -132,6 +132,21 @@ h1, h2, h3, h4, h5, .font-display {
   color: var(--text-muted);
 }
 
+/* Beautiful Math Formula Badge */
+.math-pill {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  font-style: normal;
+  font-size: 0.88em;
+  font-weight: 700;
+  background: #FFF0F3;
+  color: var(--primary-coral);
+  padding: 2px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-pink);
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
 a {
   color: inherit;
   text-decoration: none;
