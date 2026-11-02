@@ -85,9 +85,51 @@ h1, h2, h3, h4, h5, .font-display {
   line-height: 1.25;
 }
 
+/* Modern Vector SVG Icons (Zero Emotes) */
+.svg-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.svg-icon-sm {
+  width: 15px;
+  height: 15px;
+}
+
+.svg-icon-md {
+  width: 22px;
+  height: 22px;
+}
+
+.svg-icon-lg {
+  width: 32px;
+  height: 32px;
+}
+
 .coral-text {
   color: var(--primary-coral);
   font-weight: 800;
+}
+
+.text-coral {
+  color: var(--primary-coral);
+}
+
+.text-emerald {
+  color: #10B981;
+}
+
+.text-slate {
+  color: var(--text-muted);
 }
 
 a {
@@ -747,8 +789,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.8rem;
   position: relative;
+  overflow: hidden;
+}
+
+.avatar-svg {
+  width: 100%;
+  height: 100%;
 }
 
 .author-contact-list {

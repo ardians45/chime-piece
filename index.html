@@ -6,8 +6,8 @@
   <title>chime-piece — Web 2.0 Science Learning Hub & Academic E-Portfolio</title>
   <meta name="description" content="chime-piece — An academic e-portfolio and Web 2.0 digital learning guide by Adriana Alya Binti Jefri (UiTM).">
   
-  <!-- Favicon & Stylesheet -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+  <!-- Modern Vector Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23FF7582%22 stroke-width=%222%22><circle cx=%2212%22 cy=%2212%22 r=%222%22/><ellipse cx=%2212%22 cy=%2212%22 rx=%229%22 ry=%224%22 transform=%22rotate(30 12 12)%22/><ellipse cx=%2212%22 cy=%2212%22 rx=%229%22 ry=%224%22 transform=%22rotate(-30 12 12)%22/></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,6 +22,11 @@
     <div class="container">
       <nav class="navbar" aria-label="Main Navigation">
         <a href="#home" class="nav-brand">
+          <svg class="svg-icon svg-icon-md text-coral" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="2.5"/>
+            <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/>
+            <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/>
+          </svg>
           <span>chime-piece</span>
           <span class="brand-dot"></span>
         </a>
@@ -36,17 +41,21 @@
         </ul>
 
         <div class="nav-actions">
-          <a href="#tools" class="btn btn-coral btn-sm">Explore Tools ✨</a>
+          <a href="#tools" class="btn btn-coral btn-sm">
+            <span>Explore Tools</span>
+            <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
 
-        <button class="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg class="svg-icon svg-icon-md" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </nav>
     </div>
   </header>
 
   <!-- ===================================================================
-       Hero Section (Echoing Reference: Highlighted words, Coral CTA,
-       Floating Badges, and Interactive Physics Canvas)
+       Hero Section (Clean Vector Icons, Coral Pill CTAs, Physics Sandbox)
        =================================================================== -->
   <main>
     <section id="home" class="hero-section">
@@ -55,8 +64,10 @@
           
           <div class="hero-left">
             <div class="pill-badge">
-              <span>🌸</span>
-              <span>UiTM Science Education • Web 2.0 Initiative</span>
+              <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              <span>UiTM Science Education &bull; Web 2.0 Initiative</span>
             </div>
 
             <h1 class="hero-title">
@@ -70,11 +81,11 @@
             <div class="hero-cta-wrap">
               <a href="#tools" class="btn btn-coral">
                 <span>Explore 5 Tools</span>
-                <span>🚀</span>
+                <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
               <a href="#portfolio" class="btn btn-outline">
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                 <span>Author E-Portfolio</span>
-                <span>🎀</span>
               </a>
             </div>
 
@@ -97,7 +108,11 @@
           <!-- Hero Right: Arch Card with Interactive Physics Canvas & Badges -->
           <div class="hero-visual-card">
             <div class="floating-pill-top">
-              <span>☕</span>
+              <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
               <span>20,289+ Records Analyzed</span>
             </div>
 
@@ -107,14 +122,14 @@
                   <span class="live-dot"></span>
                   <span>Interactive Physics Sandbox</span>
                 </div>
-                <span class="pill-badge" style="padding: 3px 10px; font-size: 0.72rem;">Drag & Play</span>
+                <span class="pill-badge" style="padding: 3px 10px; font-size: 0.72rem;">Drag &amp; Play</span>
               </div>
 
               <!-- Interactive Physics HTML5 Canvas -->
               <canvas id="physicsCanvas"></canvas>
 
               <div class="canvas-chip-row">
-                <span>Click & drag atoms to test recoil:</span>
+                <span>Click &amp; drag atoms to test recoil:</span>
                 <div style="display: flex; gap: 8px;">
                   <button class="chip-btn active" data-mode="orbit">Atomic Orbitals</button>
                   <button class="chip-btn" data-mode="spring">Hooke's Spring</button>
@@ -123,7 +138,9 @@
             </div>
 
             <div class="floating-pill-bottom">
-              <span>🌸</span>
+              <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
               <span>Interactive Simulations, Real Results</span>
             </div>
           </div>
@@ -133,13 +150,17 @@
     </section>
 
     <!-- ===================================================================
-         Section: Purpose (Reference Image: "Areas of envolment" 3 Cards)
+         Section: Purpose (Areas of Involvement 3 Cards)
          =================================================================== -->
     <section id="purpose" class="section-padding" style="background: #FFFFFF;">
       <div class="container">
         <div class="section-head-center">
           <div class="pill-badge" style="margin-bottom: 12px;">
-            <span>🎯</span>
+            <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
             <span>Core Pillars</span>
           </div>
           <h2>Areas of <span class="coral-text">Involvement</span></h2>
@@ -151,7 +172,11 @@
         <div class="purpose-grid">
           <!-- Card 1 -->
           <div class="purpose-card">
-            <div class="purpose-icon-pill">🔬</div>
+            <div class="purpose-icon-pill">
+              <svg class="svg-icon svg-icon-lg" viewBox="0 0 24 24">
+                <path d="M6 18h8M3 22h18M14 22a7 7 0 1 0 0-14h-1M9 14h2M9 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/>
+              </svg>
+            </div>
             <h3>Interactive Inquiry</h3>
             <p>
               Enables science learners to manipulate physical variables in real time, test hypotheses, and visualize invisible atomic behavior safely without equipment constraints.
@@ -164,7 +189,11 @@
 
           <!-- Card 2 -->
           <div class="purpose-card">
-            <div class="purpose-icon-pill">⚡</div>
+            <div class="purpose-icon-pill">
+              <svg class="svg-icon svg-icon-lg" viewBox="0 0 24 24">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
             <h3>Diagnostic Feedback</h3>
             <p>
               Empowers educators to capture synchronous comprehension data during live lectures. Misconceptions in complex problem solving are diagnosed and remediated on the spot.
@@ -177,7 +206,11 @@
 
           <!-- Card 3 -->
           <div class="purpose-card">
-            <div class="purpose-icon-pill">📚</div>
+            <div class="purpose-icon-pill">
+              <svg class="svg-icon svg-icon-lg" viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
             <h3>Collaborative Classroom</h3>
             <p>
               Provides an all-in-one asynchronous hub for structured course materials, scientific discussion forums, automated numerical quiz grading, and collaborative peer critique.
@@ -198,7 +231,9 @@
       <div class="container">
         <div class="section-head-center">
           <div class="pill-badge" style="margin-bottom: 12px;">
-            <span>💡</span>
+            <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24">
+              <path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"/>
+            </svg>
             <span>Theoretical Framework</span>
           </div>
           <h2>What is <span class="coral-text">Web 2.0</span> in Science Education?</h2>
@@ -212,21 +247,45 @@
             <h4 style="color: var(--text-muted); margin-bottom: 6px; font-size: 1.1rem;">Traditional Web 1.0 (Passive Dissemination)</h4>
             <p style="font-size: 0.88rem; color: var(--text-muted);">One-way information delivery where students act as static observers.</p>
             <ul class="concept-list">
-              <li>❌ <span>Student is a passive consumer reading static formula sheets.</span></li>
-              <li>❌ <span>No real-time diagnostic feedback between educator and students.</span></li>
-              <li>❌ <span>Experiments are pre-recorded video clips with fixed outcomes.</span></li>
-              <li>❌ <span>Delayed paper-based assessments without iterative improvement.</span></li>
+              <li>
+                <svg class="svg-icon text-slate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span>Student is a passive consumer reading static formula sheets.</span>
+              </li>
+              <li>
+                <svg class="svg-icon text-slate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span>No real-time diagnostic feedback between educator and students.</span>
+              </li>
+              <li>
+                <svg class="svg-icon text-slate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span>Experiments are pre-recorded video clips with fixed outcomes.</span>
+              </li>
+              <li>
+                <svg class="svg-icon text-slate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                <span>Delayed paper-based assessments without iterative improvement.</span>
+              </li>
             </ul>
           </div>
 
           <div class="concept-card highlight">
-            <h4 style="color: var(--primary-coral); margin-bottom: 6px; font-size: 1.1rem;">Modern Web 2.0 (Active & Collaborative)</h4>
+            <h4 style="color: var(--primary-coral); margin-bottom: 6px; font-size: 1.1rem;">Modern Web 2.0 (Active &amp; Collaborative)</h4>
             <p style="font-size: 0.88rem; color: var(--text-body);">Multi-directional inquiry, live data response, and interactive modeling.</p>
             <ul class="concept-list">
-              <li>✅ <span>Student actively tests hypotheses and manipulates variables.</span></li>
-              <li>✅ <span>Instant live response dashboards reveal conceptual errors immediately.</span></li>
-              <li>✅ <span>Inquiry simulations permit infinite safe, non-destructive trials.</span></li>
-              <li>✅ <span>Collaborative problem-solving boards and asynchronous peer debate.</span></li>
+              <li>
+                <svg class="svg-icon text-coral" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Student actively tests hypotheses and manipulates variables.</span>
+              </li>
+              <li>
+                <svg class="svg-icon text-coral" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Instant live response dashboards reveal conceptual errors immediately.</span>
+              </li>
+              <li>
+                <svg class="svg-icon text-coral" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Inquiry simulations permit infinite safe, non-destructive trials.</span>
+              </li>
+              <li>
+                <svg class="svg-icon text-coral" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Collaborative problem-solving boards and asynchronous peer debate.</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -234,7 +293,10 @@
         <!-- SAMR & 5E Instructional Model Badges -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 32px;">
           <div style="background: #FFFFFF; border: 1.5px solid var(--border-pink); border-radius: 20px; padding: 22px;">
-            <h4 style="font-size: 0.98rem; margin-bottom: 6px;">📈 SAMR Model Integration</h4>
+            <h4 style="font-size: 0.98rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+              <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              <span>SAMR Model Integration</span>
+            </h4>
             <p style="font-size: 0.82rem; color: var(--text-muted);">From functional substitution to full pedagogical redefinition in science.</p>
             <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px;">
               <span class="tool-tag" style="background: #F3F4F6; color: #4B5563; border: none;">Substitution</span>
@@ -245,7 +307,10 @@
           </div>
 
           <div style="background: #FFFFFF; border: 1.5px solid var(--border-pink); border-radius: 20px; padding: 22px;">
-            <h4 style="font-size: 0.98rem; margin-bottom: 6px;">🧬 Bybee's 5E Instructional Model</h4>
+            <h4 style="font-size: 0.98rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
+              <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7M6 9v12"/></svg>
+              <span>Bybee's 5E Instructional Model</span>
+            </h4>
             <p style="font-size: 0.82rem; color: var(--text-muted);">Scaffolding scientific discovery through structured inquiry phases.</p>
             <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px;">
               <span class="tool-tag">1. Engage</span>
@@ -261,13 +326,15 @@
     </section>
 
     <!-- ===================================================================
-         Section: 5 Web 2.0 Tools (Reference Image: "Mastery Bundle" Card Grid)
+         Section: 5 Web 2.0 Tools (Mastery Toolkit)
          =================================================================== -->
     <section id="tools" class="section-padding">
       <div class="container">
         <div class="section-head-center">
           <div class="pill-badge" style="margin-bottom: 12px;">
-            <span>🛠️</span>
+            <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
             <span>Mastery Toolkit</span>
           </div>
           <h2>Discover Our Curated <span class="coral-text">Web 2.0 Suite</span></h2>
@@ -337,14 +404,17 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Official Link:</span>
-                <span class="info-val"><a href="https://nearpod.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">nearpod.com ↗</a></span>
+                <span class="info-val"><a href="https://nearpod.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">nearpod.com &nearr;</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
             <div class="deep-box">
-              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <span>Critical Evaluation for Teaching &amp; Learning</span>
+              </h4>
               <p style="font-size: 0.9rem; margin-bottom: 12px;">
                 <strong>Student Engagement Dynamics:</strong> Eliminates passive disengagement. Students who hesitate to speak aloud in a large lecture hall submit responses comfortably through their personal devices, dramatically raising participation across mixed-ability cohorts.
               </p>
@@ -357,12 +427,15 @@
             </div>
 
             <div class="deep-box">
-              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                <span>Step-by-Step Implementation Guide</span>
+              </h4>
               <div class="step-card">
                 <div class="step-num">01</div>
                 <div>
                   <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Teacher Lesson Preparation</h5>
-                  <p style="font-size: 0.85rem; color: var(--text-body);">Log into Nearpod, upload slides on <em>Newton's Laws</em>, and insert interactive activities: click <strong>Add Content & Activities > Draw It</strong> (force vectors) and <strong>Open-Ended Question</strong>.</p>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Log into Nearpod, upload slides on <em>Newton's Laws</em>, and insert interactive activities: click <strong>Add Content &amp; Activities &gt; Draw It</strong> (force vectors) and <strong>Open-Ended Question</strong>.</p>
                 </div>
               </div>
               <div class="step-card">
@@ -375,15 +448,16 @@
               <div class="step-card">
                 <div class="step-num">03</div>
                 <div>
-                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Formative Feedback & Intervention</h5>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Formative Feedback &amp; Intervention</h5>
                   <p style="font-size: 0.85rem; color: var(--text-body);">Teacher monitors live free-body diagram submissions, highlighting common misconceptions to push to all student screens for guided discussion.</p>
                 </div>
               </div>
             </div>
 
             <div class="scenario-card-coral">
-              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
-                <span>⚛️</span> Physics Classroom Scenario: Newton's Third Law (Action-Reaction)
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/></svg>
+                <span>Physics Classroom Scenario: Newton's Third Law (Action-Reaction)</span>
               </h4>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
                 <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
@@ -436,14 +510,17 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Official Link:</span>
-                <span class="info-val"><a href="https://socrative.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">socrative.com ↗</a></span>
+                <span class="info-val"><a href="https://socrative.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">socrative.com &nearr;</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
             <div class="deep-box">
-              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <span>Critical Evaluation for Teaching &amp; Learning</span>
+              </h4>
               <p style="font-size: 0.9rem; margin-bottom: 12px;">
                 <strong>Student Engagement Dynamics:</strong> Features the "Space Race" module where students form teams to propel colorful rockets across the board by solving physics calculations correctly, sparking friendly and engaging peer motivation.
               </p>
@@ -456,33 +533,37 @@
             </div>
 
             <div class="deep-box">
-              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                <span>Step-by-Step Implementation Guide</span>
+              </h4>
               <div class="step-card">
                 <div class="step-num">01</div>
                 <div>
                   <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Authoring Diagnostic Quizzes</h5>
-                  <p style="font-size: 0.85rem; color: var(--text-body);">Go to Socrative, click <strong>Quizzes > Add Quiz</strong>. Create 4 multiple choice and short-answer calculation questions on <em>Conservation of Mechanical Energy</em>.</p>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Go to Socrative, click <strong>Quizzes &gt; Add Quiz</strong>. Create 4 multiple choice and short-answer calculation questions on <em>Conservation of Mechanical Energy</em>.</p>
                 </div>
               </div>
               <div class="step-card">
                 <div class="step-num">02</div>
                 <div>
                   <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Launching Room for Students</h5>
-                  <p style="font-size: 0.85rem; color: var(--text-body);">Click <strong>Launch > Quiz</strong>, select "Instant Feedback" mode. Students join at <code>b.socrative.com/login/student/</code> by entering the teacher's room name.</p>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Click <strong>Launch &gt; Quiz</strong>, select "Instant Feedback" mode. Students join at <code>b.socrative.com/login/student/</code> by entering the teacher's room name.</p>
                 </div>
               </div>
               <div class="step-card">
                 <div class="step-num">03</div>
                 <div>
-                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Live Matrix Analysis & Excel Export</h5>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Live Matrix Analysis &amp; Excel Export</h5>
                   <p style="font-size: 0.85rem; color: var(--text-body);">Monitor the live grid. Questions showing red blocks across majority students are flagged. Export the final class performance report to Excel for longitudinal tracking.</p>
                 </div>
               </div>
             </div>
 
             <div class="scenario-card-coral">
-              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
-                <span>⚛️</span> Physics Classroom Scenario: Conservation of Mechanical Energy
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/></svg>
+                <span>Physics Classroom Scenario: Conservation of Mechanical Energy</span>
               </h4>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
                 <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
@@ -512,14 +593,14 @@
               <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
                 <span class="pill-badge" style="font-size: 0.76rem;">Modular Course Repository</span>
                 <span class="pill-badge" style="font-size: 0.76rem;">LaTeX Formula Quizzes</span>
-                <span class="pill-badge" style="font-size: 0.76rem;">Rubric Grading & Forums</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Rubric Grading &amp; Forums</span>
               </div>
             </div>
 
             <div class="tool-quick-info">
               <div class="info-row">
                 <span class="info-label">Pedagogical Role:</span>
-                <span class="info-val">LMS & Asynchronous Hub</span>
+                <span class="info-val">LMS &amp; Asynchronous Hub</span>
               </div>
               <div class="info-row">
                 <span class="info-label">SAMR Level:</span>
@@ -531,23 +612,26 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Technical Limitation:</span>
-                <span class="info-val" style="color: var(--primary-coral);">Requires hosting & server setup</span>
+                <span class="info-val" style="color: var(--primary-coral);">Requires hosting &amp; server setup</span>
               </div>
               <div class="info-row">
                 <span class="info-label">Official Link:</span>
-                <span class="info-val"><a href="https://moodle.org" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">moodle.org ↗</a></span>
+                <span class="info-val"><a href="https://moodle.org" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">moodle.org &nearr;</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
             <div class="deep-box">
-              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <span>Critical Evaluation for Teaching &amp; Learning</span>
+              </h4>
               <p style="font-size: 0.9rem; margin-bottom: 12px;">
                 <strong>Student Engagement Dynamics:</strong> Extends academic discourse outside physical class hours. Discussion forums allow in-depth peer dialogue on challenging scientific proofs and lab report methodologies.
               </p>
               <p style="font-size: 0.9rem; margin-bottom: 12px;">
-                <strong>Learning Outcomes:</strong> Supports individualized learning pathways through conditional activity completion (e.g. students must score $>70\%$ on a diagnostic quiz before advanced course modules unlock).
+                <strong>Learning Outcomes:</strong> Supports individualized learning pathways through conditional activity completion (e.g. students must score &gt;70% on a diagnostic quiz before advanced course modules unlock).
               </p>
               <p style="font-size: 0.9rem;">
                 <strong>Instructional Strategies:</strong> Ideal for Flipped Classroom architectures. Foundational theory videos and slide packs are reviewed at home, preserving physical laboratory sessions for hands-on experimentation.
@@ -555,18 +639,21 @@
             </div>
 
             <div class="deep-box">
-              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                <span>Step-by-Step Implementation Guide</span>
+              </h4>
               <div class="step-card">
                 <div class="step-num">01</div>
                 <div>
-                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Module Architecture & Setup</h5>
-                  <p style="font-size: 0.85rem; color: var(--text-body);">In Moodle, toggle <strong>Turn Editing On</strong>. Create a structured module titled <em>"PHY150: Waves & Optics"</em>, adding PDF lecture handouts, embedded simulation links, and formula sheets.</p>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Module Architecture &amp; Setup</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">In Moodle, toggle <strong>Turn Editing On</strong>. Create a structured module titled <em>"PHY150: Waves &amp; Optics"</em>, adding PDF lecture handouts, embedded simulation links, and formula sheets.</p>
                 </div>
               </div>
               <div class="step-card">
                 <div class="step-num">02</div>
                 <div>
-                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Collaborative Forum & Assignment</h5>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Collaborative Forum &amp; Assignment</h5>
                   <p style="font-size: 0.85rem; color: var(--text-body);">Add a <strong>Forum</strong> activity titled <em>"Physics Problem of the Week"</em> requiring each student to post one worked problem solution and evaluate two classmates' derivation steps.</p>
                 </div>
               </div>
@@ -580,8 +667,9 @@
             </div>
 
             <div class="scenario-card-coral">
-              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
-                <span>⚛️</span> Physics Classroom Scenario: Wave Superposition & Interference
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/></svg>
+                <span>Physics Classroom Scenario: Wave Superposition &amp; Interference</span>
               </h4>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
                 <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
@@ -634,14 +722,17 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Official Link:</span>
-                <span class="info-val"><a href="https://pivotinteractives.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">pivotinteractives.com ↗</a></span>
+                <span class="info-val"><a href="https://pivotinteractives.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">pivotinteractives.com &nearr;</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
             <div class="deep-box">
-              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <span>Critical Evaluation for Teaching &amp; Learning</span>
+              </h4>
               <p style="font-size: 0.9rem; margin-bottom: 12px;">
                 <strong>Student Engagement Dynamics:</strong> Grants students genuine experimental agency. Learners independently select video parameters (e.g. angle of inclination, cart mass, fluid viscosity) and collect unique empirical data sets.
               </p>
@@ -654,7 +745,10 @@
             </div>
 
             <div class="deep-box">
-              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                <span>Step-by-Step Implementation Guide</span>
+              </h4>
               <div class="step-card">
                 <div class="step-num">01</div>
                 <div>
@@ -672,15 +766,16 @@
               <div class="step-card">
                 <div class="step-num">03</div>
                 <div>
-                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Dynamic Graphing & Slope Derivation</h5>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Dynamic Graphing &amp; Slope Derivation</h5>
                   <p style="font-size: 0.85rem; color: var(--text-body);">Student plots $y$ vs. $t^2$ in the integrated data table, applies linear regression, and derives experimental $g$ from the slope ($m = \frac{1}{2}g$), completing the built-in error analysis.</p>
                 </div>
               </div>
             </div>
 
             <div class="scenario-card-coral">
-              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
-                <span>⚛️</span> Physics Classroom Scenario: 2D Momentum in Collisions
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/></svg>
+                <span>Physics Classroom Scenario: 2D Momentum in Collisions</span>
               </h4>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
                 <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
@@ -708,7 +803,7 @@
                 PhET Interactive Simulations (University of Colorado Boulder) represents the premier open-source inquiry sandbox in STEM. By animating invisible phenomena—like moving electrons, magnetic flux, and thermal molecular collisions—it allows students to discover scientific laws through intuitive parameter manipulation.
               </p>
               <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
-                <span class="pill-badge" style="font-size: 0.76rem;">100% Free & Open-Source</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">100% Free &amp; Open-Source</span>
                 <span class="pill-badge" style="font-size: 0.76rem;">Variable Isolation Sliders</span>
                 <span class="pill-badge" style="font-size: 0.76rem;">Multiple Symbolic Representations</span>
               </div>
@@ -733,14 +828,17 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Official Link:</span>
-                <span class="info-val"><a href="https://phet.colorado.edu" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">phet.colorado.edu ↗</a></span>
+                <span class="info-val"><a href="https://phet.colorado.edu" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">phet.colorado.edu &nearr;</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
             <div class="deep-box">
-              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <span>Critical Evaluation for Teaching &amp; Learning</span>
+              </h4>
               <p style="font-size: 0.9rem; margin-bottom: 12px;">
                 <strong>Student Engagement Dynamics:</strong> Intuitive gamified sandbox encourages active "what-if" experimentation. Learners freely explore without the anxiety of damaging physical apparatus or burning out components.
               </p>
@@ -753,11 +851,14 @@
             </div>
 
             <div class="deep-box">
-              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <h4>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                <span>Step-by-Step Implementation Guide</span>
+              </h4>
               <div class="step-card">
                 <div class="step-num">01</div>
                 <div>
-                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Selecting Simulation & Scaffolding</h5>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Selecting Simulation &amp; Scaffolding</h5>
                   <p style="font-size: 0.85rem; color: var(--text-body);">Educator navigates to PhET and selects <strong>Circuit Construction Kit: DC</strong>. Prepares a guided inquiry prompt: <em>"How does increasing voltage affect circuit current when resistance remains constant?"</em></p>
                 </div>
               </div>
@@ -778,8 +879,9 @@
             </div>
 
             <div class="scenario-card-coral">
-              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
-                <span>⚛️</span> Physics Classroom Scenario: Faraday's Law of Electromagnetic Induction
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/></svg>
+                <span>Physics Classroom Scenario: Faraday's Law of Electromagnetic Induction</span>
               </h4>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
                 <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
@@ -799,13 +901,15 @@
     </section>
 
     <!-- ===================================================================
-         Section: Academic E-Portfolio (Reference Image: Review/Profile Style)
+         Section: Academic E-Portfolio (Adriana Alya Binti Jefri)
          =================================================================== -->
     <section id="portfolio" class="section-padding" style="background: #FFFFFF;">
       <div class="container">
         <div class="section-head-center">
           <div class="pill-badge" style="margin-bottom: 12px;">
-            <span>🌸</span>
+            <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/>
+            </svg>
             <span>Academic Identity</span>
           </div>
           <h2>Author E-Portfolio: <span class="coral-text">Adriana Alya</span></h2>
@@ -818,36 +922,68 @@
           <div class="portfolio-grid">
             
             <div class="portfolio-sidebar">
-              <div class="avatar-wrapper">👩‍🔬</div>
-              <h3 style="font-size: 1.5rem;">Adriana Alya Binti Jefri</h3>
-              <p style="color: var(--primary-coral); font-weight: 700; font-size: 0.92rem;">Science Educator & Data Specialist</p>
+              <!-- Stylized Vector Avatar (No Emote) -->
+              <div class="avatar-wrapper">
+                <svg viewBox="0 0 120 120" class="avatar-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="60" cy="60" r="56" fill="#FFF0F3" stroke="#FF7582" stroke-width="2"/>
+                  <circle cx="60" cy="48" r="20" fill="#FFE2E7"/>
+                  <path d="M42 46C42 35 50 26 60 26C70 26 78 35 78 46C78 52 74 54 74 54C74 54 68 56 60 56C52 56 46 54 46 54C46 54 42 52 42 46Z" fill="#1E293B"/>
+                  <circle cx="53" cy="47" r="6" stroke="#1E293B" stroke-width="2" fill="none"/>
+                  <circle cx="67" cy="47" r="6" stroke="#1E293B" stroke-width="2" fill="none"/>
+                  <line x1="59" y1="47" x2="61" y2="47" stroke="#1E293B" stroke-width="2"/>
+                  <path d="M34 100C34 82 45 74 60 74C75 74 86 82 86 100" fill="#FF7582"/>
+                  <path d="M52 74L60 90L68 74" fill="#FFFFFF"/>
+                  <circle cx="60" cy="98" r="4" fill="#FFFFFF"/>
+                </svg>
+              </div>
+
+              <h3 style="font-size: 1.5rem; margin-top: 4px;">Adriana Alya Binti Jefri</h3>
+              <p style="color: var(--primary-coral); font-weight: 700; font-size: 0.92rem;">Science Educator &amp; Data Specialist</p>
               <span class="tool-tag" style="background: #FFFFFF;">UiTM Diploma in Science</span>
 
               <ul class="author-contact-list">
-                <li><span>📧</span> <strong>Email:</strong> adrianajefri95@gmail.com</li>
-                <li><span>📱</span> <strong>Phone:</strong> +60 18-962 8358</li>
-                <li><span>📍</span> <strong>Location:</strong> Sungai Buloh, Selangor</li>
-                <li><span>🏛️</span> <strong>Institution:</strong> Universiti Teknologi MARA</li>
+                <li>
+                  <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span><strong>Email:</strong> adrianajefri95@gmail.com</span>
+                </li>
+                <li>
+                  <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span><strong>Phone:</strong> +60 18-962 8358</span>
+                </li>
+                <li>
+                  <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span><strong>Location:</strong> Sungai Buloh, Selangor</span>
+                </li>
+                <li>
+                  <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><line x1="2" y1="22" x2="22" y2="22"/><line x1="4" y1="18" x2="20" y2="18"/><polygon points="12 2 2 7 22 7 12 2"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/></svg>
+                  <span><strong>Institution:</strong> Universiti Teknologi MARA</span>
+                </li>
               </ul>
 
               <div style="margin-top: 14px; width: 100%;">
                 <a href="i. cv resume_ADRIANA ALYA BINTI JEFRI.pdf" target="_blank" class="btn btn-coral btn-sm" style="width: 100%;">
                   <span>Download Full CV (PDF)</span>
-                  <span>📄</span>
+                  <svg class="svg-icon svg-icon-sm" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 </a>
               </div>
             </div>
 
             <div class="portfolio-content">
               <div>
-                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 8px;"><span>💡</span> Pedagogical Philosophy</h4>
+                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                  <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                  <span>Pedagogical Philosophy</span>
+                </h4>
                 <p style="font-size: 0.94rem; line-height: 1.7; color: var(--text-body);">
                   "Science is fundamentally an active inquiry into how nature behaves, not a static collection of formulas to be memorized. In modern education, Web 2.0 technologies transition students from passive listeners into active investigators, fostering collaborative dialogue, safe simulation of invisible physical phenomena, and immediate formative intervention."
                 </p>
               </div>
 
               <div>
-                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 12px;"><span>🎓</span> Academic Background</h4>
+                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                  <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  <span>Academic Background</span>
+                </h4>
                 <div class="timeline-item">
                   <span style="font-size: 0.78rem; font-weight: 700; color: var(--primary-coral);">2020 – 2023</span>
                   <h5 style="font-size: 0.98rem; font-weight: 700;">Universiti Teknologi MARA (UiTM)</h5>
@@ -861,18 +997,24 @@
               </div>
 
               <div>
-                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 12px;"><span>💼</span> Professional & Analytical Experience</h4>
+                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                  <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  <span>Professional &amp; Analytical Experience</span>
+                </h4>
                 <div class="timeline-item">
                   <span style="font-size: 0.78rem; font-weight: 700; color: var(--primary-coral);">July 2024 – December 2024</span>
                   <h5 style="font-size: 0.98rem; font-weight: 700;">Department of Statistics Malaysia (DOSM), Selangor</h5>
                   <p style="font-size: 0.85rem; color: var(--text-muted);">
-                    <strong>Personnel (MySTEP E19 – Processing & Analysis Unit):</strong> Verified and analyzed 20,289 agricultural census records using the MyAgriCensus system. Collaborated across regional reporting teams to achieve a 100% KPI for assigned districts and 98.4% state-level KPI.
+                    <strong>Personnel (MySTEP E19 – Processing &amp; Analysis Unit):</strong> Verified and analyzed 20,289 agricultural census records using the MyAgriCensus system. Collaborated across regional reporting teams to achieve a 100% KPI for assigned districts and 98.4% state-level KPI.
                   </p>
                 </div>
               </div>
 
               <div>
-                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;"><span>⚡</span> Core Competencies</h4>
+                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                  <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <span>Core Competencies</span>
+                </h4>
                 <div style="display: flex; gap: 8px; flex-wrap: wrap;">
                   <span class="skill-tag-pill">Large-Scale Data Validation</span>
                   <span class="skill-tag-pill">Scientific Methodology</span>
@@ -899,7 +1041,11 @@
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
             <div>
               <div class="pill-badge" style="margin-bottom: 8px;">
-                <span>📋</span>
+                <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                  <polyline points="9 14 11 16 15 11"/>
+                </svg>
                 <span>Self-Assessment Verification</span>
               </div>
               <h3 style="font-size: 1.6rem;">March 2026 E-Portfolio Rubric Compliance</h3>
@@ -911,32 +1057,32 @@
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-top: 24px;">
             <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
-              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 1 • Level 4</span>
-              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Tool Description & Features</h5>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 1 &bull; Level 4</span>
+              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Tool Description &amp; Features</h5>
               <p style="font-size: 0.82rem; color: var(--text-muted);">Comprehensive structured analysis of 5 tools, covering technical functions, pedagogical scope, and explicit limitations.</p>
             </div>
 
             <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
-              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 2 • Level 4</span>
-              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Critical Evaluation of T&L</h5>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 2 &bull; Level 4</span>
+              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Critical Evaluation of T&amp;L</h5>
               <p style="font-size: 0.82rem; color: var(--text-muted);">Strong analytical evaluation demonstrating how each tool drives engagement, improves learning outcomes, and fits SAMR/5E.</p>
             </div>
 
             <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
-              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 3 • Level 4</span>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 3 &bull; Level 4</span>
               <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Guidelines on Using Tool</h5>
               <p style="font-size: 0.82rem; color: var(--text-muted);">Clear, numbered step-by-step guidance for educators and students covering lesson setup, execution, and intervention.</p>
             </div>
 
             <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
-              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 4 • Level 4</span>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 4 &bull; Level 4</span>
               <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Analytical Discussion</h5>
               <p style="font-size: 0.82rem; color: var(--text-muted);">Substantive physics classroom scenarios illustrating how each tool resolves real-world conceptual friction in STEM.</p>
             </div>
 
             <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
-              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 5 • Level 4</span>
-              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Academic Quality & Writing</h5>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 5 &bull; Level 4</span>
+              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Academic Quality &amp; Writing</h5>
               <p style="font-size: 0.82rem; color: var(--text-muted);">Rigorous academic prose, zero grammatical errors, clear typographic hierarchy, and formal educational terminology.</p>
             </div>
           </div>
@@ -953,6 +1099,11 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <h3 style="display: flex; align-items: center; gap: 8px;">
+            <svg class="svg-icon svg-icon-md text-coral" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="2.5"/>
+              <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)"/>
+              <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)"/>
+            </svg>
             <span>chime-piece</span>
             <span class="brand-dot"></span>
           </h3>
@@ -967,7 +1118,7 @@
         <div>
           <h4 style="font-size: 1.05rem; margin-bottom: 16px;">Platform Navigation</h4>
           <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-body);">
-            <li><a href="#home">Home & Physics Sandbox</a></li>
+            <li><a href="#home">Home &amp; Physics Sandbox</a></li>
             <li><a href="#purpose">Areas of Involvement</a></li>
             <li><a href="#web2-concept">Theoretical Pedagogical Models</a></li>
             <li><a href="#tools">5 Web Tools Directory</a></li>
@@ -977,7 +1128,7 @@
         </div>
 
         <div>
-          <h4 style="font-size: 1.05rem; margin-bottom: 16px;">Author Contact & Credits</h4>
+          <h4 style="font-size: 1.05rem; margin-bottom: 16px;">Author Contact &amp; Credits</h4>
           <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-body);">
             <li><strong>Author:</strong> Adriana Alya Binti Jefri</li>
             <li><strong>Email:</strong> adrianajefri95@gmail.com</li>
