@@ -1,6 +1,6 @@
 /**
  * chime-piece — Web 2.0 Science Learning Hub & Academic E-Portfolio
- * Interactive Logic & Canvas Physics Engine
+ * Interactive Logic & Canvas Physics Engine (Coral-Pink Blush Aesthetic)
  * Author: Adriana Alya Binti Jefri (UiTM Diploma in Science)
  * ponytail: Native Vanilla JS, zero dependencies, performant 60fps animations
  */
@@ -21,7 +21,6 @@ function initPhysicsCanvas() {
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
 
-  // Resize canvas to its display width & height
   let width, height;
   function resize() {
     const rect = canvas.getBoundingClientRect();
@@ -32,19 +31,18 @@ function initPhysicsCanvas() {
   resize();
   window.addEventListener('resize', resize);
 
-  // Physics Simulation State
-  let mode = 'orbit'; // 'orbit', 'spring', or 'sparkle'
+  let mode = 'orbit'; // 'orbit', 'spring'
   let gravity = 0.25;
   let friction = 0.985;
   let springK = 0.05;
 
-  // Particle Class with Cute Pastel Palette
+  // Aesthetic Coral-Pink & Science Colors from Dribbble Reference
   const colors = [
-    { fill: '#7C3AED', glow: 'rgba(124, 58, 237, 0.4)', name: 'Proton' },
-    { fill: '#F43F5E', glow: 'rgba(244, 63, 94, 0.4)', name: 'Positron' },
-    { fill: '#0D9488', glow: 'rgba(13, 148, 136, 0.4)', name: 'Electron' },
-    { fill: '#F59E0B', glow: 'rgba(245, 158, 11, 0.4)', name: 'Photon' },
-    { fill: '#10B981', glow: 'rgba(16, 185, 129, 0.4)', name: 'Neutron' }
+    { fill: '#FF7582', glow: 'rgba(255, 117, 130, 0.45)', name: 'Core Nucleus' },
+    { fill: '#FF8A95', glow: 'rgba(255, 138, 149, 0.4)', name: 'Proton' },
+    { fill: '#0EA5E9', glow: 'rgba(14, 165, 233, 0.35)', name: 'Electron' },
+    { fill: '#F59E0B', glow: 'rgba(245, 158, 11, 0.35)', name: 'Photon' },
+    { fill: '#10B981', glow: 'rgba(16, 185, 129, 0.35)', name: 'Neutron' }
   ];
 
   class Particle {
@@ -63,7 +61,7 @@ function initPhysicsCanvas() {
       this.isDragged = false;
       this.angle = Math.random() * Math.PI * 2;
       this.angularSpeed = 0.02 + Math.random() * 0.03;
-      this.orbitRadius = 50 + Math.random() * 70;
+      this.orbitRadius = 45 + Math.random() * 65;
     }
 
     update(centerX, centerY) {
@@ -77,7 +75,6 @@ function initPhysicsCanvas() {
         }
       } else if (mode === 'spring') {
         if (!this.isFixed) {
-          // Hooke's Law Spring Force F = -k * dx
           const dx = this.x - this.originX;
           const dy = this.y - this.originY;
           this.vx -= dx * springK;
@@ -90,7 +87,6 @@ function initPhysicsCanvas() {
           this.x += this.vx;
           this.y += this.vy;
 
-          // Soft Boundary Bouncing
           const displayW = width / window.devicePixelRatio;
           const displayH = height / window.devicePixelRatio;
           if (this.x - this.radius < 0) { this.x = this.radius; this.vx *= -0.7; }
@@ -111,17 +107,16 @@ function initPhysicsCanvas() {
       ctx.fillStyle = this.color;
       ctx.fill();
 
-      // Inner White Shimmer for Cute Glossy Glass Look
+      // Cute Glossy Shimmer
       ctx.beginPath();
       ctx.arc(this.x - this.radius * 0.3, this.y - this.radius * 0.3, this.radius * 0.3, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.75)';
       ctx.fill();
 
       ctx.restore();
     }
   }
 
-  // Create Initial Particle Set
   let particles = [];
   function setupParticles() {
     particles = [];
@@ -130,10 +125,8 @@ function initPhysicsCanvas() {
     const centerX = displayW / 2;
     const centerY = displayH / 2;
 
-    // Nucleus (Core)
     particles.push(new Particle(centerX, centerY, 22, colors[0], true));
 
-    // Surrounding Orbiting Electrons & Atoms
     for (let i = 0; i < 6; i++) {
       const col = colors[(i % (colors.length - 1)) + 1];
       const p = new Particle(centerX, centerY, 12 + (i % 3) * 3, col);
@@ -144,10 +137,7 @@ function initPhysicsCanvas() {
   }
   setupParticles();
 
-  // Mouse & Touch Interaction (Drag and Drop Physics)
   let draggedParticle = null;
-  let mouseX = 0;
-  let mouseY = 0;
 
   function getCanvasCoords(e) {
     const rect = canvas.getBoundingClientRect();
@@ -161,10 +151,6 @@ function initPhysicsCanvas() {
 
   function handleStart(e) {
     const { x, y } = getCanvasCoords(e);
-    mouseX = x;
-    mouseY = y;
-
-    // Check hit
     for (let i = particles.length - 1; i >= 0; i--) {
       const p = particles[i];
       const dist = Math.hypot(p.x - x, p.y - y);
@@ -177,16 +163,12 @@ function initPhysicsCanvas() {
   }
 
   function handleMove(e) {
+    if (!draggedParticle) return;
     const { x, y } = getCanvasCoords(e);
-    mouseX = x;
-    mouseY = y;
-
-    if (draggedParticle) {
-      draggedParticle.x = x;
-      draggedParticle.y = y;
-      draggedParticle.vx = 0;
-      draggedParticle.vy = 0;
-    }
+    draggedParticle.x = x;
+    draggedParticle.y = y;
+    draggedParticle.vx = 0;
+    draggedParticle.vy = 0;
   }
 
   function handleEnd() {
@@ -204,7 +186,6 @@ function initPhysicsCanvas() {
   window.addEventListener('touchmove', handleMove, { passive: true });
   window.addEventListener('touchend', handleEnd);
 
-  // Mode Selection Chips
   const chipBtns = document.querySelectorAll('.chip-btn');
   chipBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -214,7 +195,6 @@ function initPhysicsCanvas() {
     });
   });
 
-  // Main 60fps Physics Render Loop
   function animate() {
     const displayW = width / window.devicePixelRatio;
     const displayH = height / window.devicePixelRatio;
@@ -223,13 +203,12 @@ function initPhysicsCanvas() {
 
     ctx.clearRect(0, 0, displayW, displayH);
 
-    // Draw Subtle Spring Connections or Orbital Tracks
     if (mode === 'orbit') {
       ctx.save();
-      ctx.strokeStyle = 'rgba(124, 58, 237, 0.12)';
+      ctx.strokeStyle = 'rgba(255, 117, 130, 0.2)';
       ctx.lineWidth = 1.5;
       ctx.setLineDash([4, 6]);
-      [60, 95, 130].forEach(r => {
+      [55, 88, 120].forEach(r => {
         ctx.beginPath();
         ctx.arc(centerX, centerY, r, 0, Math.PI * 2);
         ctx.stroke();
@@ -243,27 +222,25 @@ function initPhysicsCanvas() {
           ctx.beginPath();
           ctx.moveTo(p.originX, p.originY);
           ctx.lineTo(p.x, p.y);
-          ctx.strokeStyle = 'rgba(124, 58, 237, 0.2)';
+          ctx.strokeStyle = 'rgba(255, 117, 130, 0.35)';
           ctx.stroke();
         }
       });
       ctx.restore();
     }
 
-    // Interactive Dragging Elastic Line
     if (draggedParticle) {
       ctx.save();
       ctx.beginPath();
       ctx.moveTo(draggedParticle.originX, draggedParticle.originY);
       ctx.lineTo(draggedParticle.x, draggedParticle.y);
-      ctx.strokeStyle = '#F43F5E';
-      ctx.lineWidth = 2;
-      ctx.setLineDash([3, 3]);
+      ctx.strokeStyle = '#FF7582';
+      ctx.lineWidth = 2.5;
+      ctx.setLineDash([4, 4]);
       ctx.stroke();
       ctx.restore();
     }
 
-    // Update and Draw Particles
     particles.forEach(p => {
       p.update(centerX, centerY);
       p.draw(ctx);
@@ -276,7 +253,7 @@ function initPhysicsCanvas() {
 }
 
 /* ===================================================================
-   2. Tool Tabs Switcher (5 Tools Showcase)
+   2. Tool Tabs Switcher
    =================================================================== */
 function initToolTabs() {
   const tabBtns = document.querySelectorAll('.tool-tab-btn');
@@ -299,7 +276,7 @@ function initToolTabs() {
 }
 
 /* ===================================================================
-   3. Smooth Navbar Active Link Highlighter via IntersectionObserver
+   3. Active Link Scroll Highlighter
    =================================================================== */
 function initNavScroll() {
   const sections = document.querySelectorAll('section[id]');
@@ -346,8 +323,8 @@ function initMobileNav() {
       navLinks.style.background = '#FFFFFF';
       navLinks.style.borderRadius = '20px';
       navLinks.style.padding = '20px';
-      navLinks.style.boxShadow = '0 12px 32px rgba(15,23,42,0.15)';
+      navLinks.style.boxShadow = '0 12px 32px rgba(255, 117, 130, 0.18)';
+      navLinks.style.border = '1.5px solid #FFE2E7';
     }
   });
 }
-

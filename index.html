@@ -7,25 +7,23 @@
   <meta name="description" content="chime-piece — An academic e-portfolio and Web 2.0 digital learning guide by Adriana Alya Binti Jefri (UiTM).">
   
   <!-- Favicon & Stylesheet -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Ambient Pastel Gradient Background Blobs -->
-  <div class="ambient-blob blob-1"></div>
-  <div class="ambient-blob blob-2"></div>
-  <div class="ambient-blob blob-3"></div>
+  <!-- Soft Ambient Glow -->
+  <div class="ambient-glow"></div>
 
   <!-- ===================================================================
-       Navigation Bar (Floating Pill Navbar)
+       Navigation Bar (Clean White with Coral-Pink Pill Button)
        =================================================================== -->
   <header class="navbar-wrapper">
-    <div class="navbar-container">
+    <div class="container">
       <nav class="navbar" aria-label="Main Navigation">
         <a href="#home" class="nav-brand">
-          <div class="brand-icon">⚛️</div>
-          <span>chime-piece<span style="color: var(--primary);">.</span></span>
+          <span>chime-piece</span>
+          <span class="brand-dot"></span>
         </a>
 
         <ul class="nav-links">
@@ -33,12 +31,12 @@
           <li><a href="#purpose" class="nav-link">Purpose</a></li>
           <li><a href="#web2-concept" class="nav-link">Web 2.0</a></li>
           <li><a href="#tools" class="nav-link">Tools & Guides</a></li>
-          <li><a href="#portfolio" class="nav-link">About Me</a></li>
+          <li><a href="#portfolio" class="nav-link">About Adriana</a></li>
           <li><a href="#rubric" class="nav-link">Rubric Check</a></li>
         </ul>
 
         <div class="nav-actions">
-          <a href="#tools" class="btn btn-primary btn-sm">Explore Tools ✨</a>
+          <a href="#tools" class="btn btn-coral btn-sm">Explore Tools ✨</a>
         </div>
 
         <button class="mobile-toggle" aria-label="Toggle navigation menu">☰</button>
@@ -47,74 +45,86 @@
   </header>
 
   <!-- ===================================================================
-       Hero Section (Sketch: "Welcome to ChiM", Motto, Interactive Element)
+       Hero Section (Echoing Reference: Highlighted words, Coral CTA,
+       Floating Badges, and Interactive Physics Canvas)
        =================================================================== -->
   <main>
     <section id="home" class="hero-section">
       <div class="container">
         <div class="hero-grid">
           
-          <div class="hero-content">
-            <div class="badge-pill">
-              <span>✨</span>
+          <div class="hero-left">
+            <div class="pill-badge">
+              <span>🌸</span>
               <span>UiTM Science Education • Web 2.0 Initiative</span>
             </div>
 
             <h1 class="hero-title">
-              Welcome to <span class="gradient-text">chime-piece</span>
+              Learning new <span class="coral-text">Science</span> concepts is now much <span class="coral-text">interactive</span> with us
             </h1>
 
-            <p class="hero-motto">
-              <strong>"Empowering Scientific Inquiry Through Collaborative Digital Environments."</strong><br>
-              A curated Web 2.0 digital directory and academic e-portfolio engineered to help science educators and students bridge abstract physics concepts with real-time collaborative investigation.
+            <p class="hero-subtitle">
+              Your future starts with the inquiry skills you develop. Explore real-time physics simulations, collaborative digital labs, and instant formative diagnostics with confidence today.
             </p>
 
-            <div class="hero-cta-group">
-              <a href="#tools" class="btn btn-primary">
-                <span>Explore 5 Web Tools</span>
+            <div class="hero-cta-wrap">
+              <a href="#tools" class="btn btn-coral">
+                <span>Explore 5 Tools</span>
                 <span>🚀</span>
               </a>
-              <a href="#portfolio" class="btn btn-secondary">
+              <a href="#portfolio" class="btn btn-outline">
                 <span>Author E-Portfolio</span>
                 <span>🎀</span>
               </a>
             </div>
 
-            <div class="hero-stats">
-              <div class="stat-item">
+            <div class="hero-stats-row">
+              <div class="stat-box">
                 <h4>5</h4>
                 <p>Curated Science Tools</p>
               </div>
-              <div class="stat-item">
+              <div class="stat-box">
                 <h4>SAMR</h4>
                 <p>Pedagogical Matrix</p>
               </div>
-              <div class="stat-item">
+              <div class="stat-box">
                 <h4>100%</h4>
                 <p>Inquiry-Driven Focus</p>
               </div>
             </div>
           </div>
 
-          <!-- Interactive Physics Sandbox (Canvas Widget from Sketch) -->
-          <div class="hero-canvas-card">
-            <div class="canvas-header">
-              <div class="canvas-title">
-                <div class="live-indicator"></div>
-                <span>Interactive Physics Sandbox (Drag & Drop)</span>
-              </div>
-              <span class="badge-pill teal" style="padding: 4px 12px; font-size: 0.75rem;">Web 2.0 Live Widget</span>
+          <!-- Hero Right: Arch Card with Interactive Physics Canvas & Badges -->
+          <div class="hero-visual-card">
+            <div class="floating-pill-top">
+              <span>☕</span>
+              <span>20,289+ Records Analyzed</span>
             </div>
 
-            <!-- HTML5 Interactive Physics Canvas -->
-            <canvas id="physicsCanvas"></canvas>
-
-            <div class="canvas-controls">
-              <span>Click or drag particles to test elastic recoil:</span>
-              <div class="canvas-btn-group">
-                <button class="chip-btn active" data-mode="orbit">Atomic Orbitals</button>
-                <button class="chip-btn" data-mode="spring">Hooke's Spring</button>
+            <div class="canvas-inner-box">
+              <div class="canvas-topbar">
+                <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-title); display: flex; align-items: center;">
+                  <span class="live-dot"></span>
+                  <span>Interactive Physics Sandbox</span>
+                </div>
+                <span class="pill-badge" style="padding: 3px 10px; font-size: 0.72rem;">Drag & Play</span>
               </div>
+
+              <!-- Interactive Physics HTML5 Canvas -->
+              <canvas id="physicsCanvas"></canvas>
+
+              <div class="canvas-chip-row">
+                <span>Click & drag atoms to test recoil:</span>
+                <div style="display: flex; gap: 8px;">
+                  <button class="chip-btn active" data-mode="orbit">Atomic Orbitals</button>
+                  <button class="chip-btn" data-mode="spring">Hooke's Spring</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-pill-bottom">
+              <span>🌸</span>
+              <span>Interactive Simulations, Real Results</span>
             </div>
           </div>
 
@@ -123,56 +133,56 @@
     </section>
 
     <!-- ===================================================================
-         Section 2: Purpose of the Platform (Sketch: 3 Cards)
+         Section: Purpose (Reference Image: "Areas of envolment" 3 Cards)
          =================================================================== -->
-    <section id="purpose" class="section-padding">
+    <section id="purpose" class="section-padding" style="background: #FFFFFF;">
       <div class="container">
-        <div class="section-header">
-          <div class="badge-pill pink">
+        <div class="section-head-center">
+          <div class="pill-badge" style="margin-bottom: 12px;">
             <span>🎯</span>
-            <span>Educational Mission</span>
+            <span>Core Pillars</span>
           </div>
-          <h2 class="section-title">Purpose of chime-piece Platform</h2>
-          <p class="section-desc">
-            Designed to overcome the traditional obstacles of science education: invisible atomic behaviors, laboratory equipment constraints, and delayed assessment feedback.
+          <h2>Areas of <span class="coral-text">Involvement</span></h2>
+          <p>
+            Bridging science and digital education with interactive tools that eliminate laboratory risks, accelerate diagnostic feedback, and enrich classroom learning.
           </p>
         </div>
 
         <div class="purpose-grid">
           <!-- Card 1 -->
-          <div class="glass-card purpose-card">
-            <div class="purpose-icon-box icon-purple">🔬</div>
-            <h3>1. Interactive Inquiry & Virtual Modeling</h3>
+          <div class="purpose-card">
+            <div class="purpose-icon-pill">🔬</div>
+            <h3>Interactive Inquiry</h3>
             <p>
-              Enables science learners to manipulate variables in real time, test hypotheses, and visualize abstract microscopic phenomena (such as electric fields and molecular dynamics) without laboratory hazards.
+              Enables science learners to manipulate physical variables in real time, test hypotheses, and visualize invisible atomic behavior safely without equipment constraints.
             </p>
-            <div class="tool-tags">
+            <div class="tool-tag-wrap">
               <span class="tool-tag">PhET Simulations</span>
               <span class="tool-tag">Pivot Interactives</span>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="glass-card purpose-card">
-            <div class="purpose-icon-box icon-pink">⚡</div>
-            <h3>2. Real-Time Diagnostic Intervention</h3>
+          <div class="purpose-card">
+            <div class="purpose-icon-pill">⚡</div>
+            <h3>Diagnostic Feedback</h3>
             <p>
-              Empowers educators to capture synchronous student comprehension data during live lectures. Misconceptions in complex problem solving are diagnosed and remediated immediately.
+              Empowers educators to capture synchronous comprehension data during live lectures. Misconceptions in complex problem solving are diagnosed and remediated on the spot.
             </p>
-            <div class="tool-tags">
+            <div class="tool-tag-wrap">
               <span class="tool-tag">Nearpod</span>
               <span class="tool-tag">Socrative</span>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="glass-card purpose-card">
-            <div class="purpose-icon-box icon-teal">📚</div>
-            <h3>3. Centralized Collaborative Classroom</h3>
+          <div class="purpose-card">
+            <div class="purpose-icon-pill">📚</div>
+            <h3>Collaborative Classroom</h3>
             <p>
               Provides an all-in-one asynchronous hub for structured course materials, scientific discussion forums, automated numerical quiz grading, and collaborative peer critique.
             </p>
-            <div class="tool-tags">
+            <div class="tool-tag-wrap">
               <span class="tool-tag">Moodle LMS</span>
               <span class="tool-tag">Flipped Classrooms</span>
             </div>
@@ -182,102 +192,92 @@
     </section>
 
     <!-- ===================================================================
-         Section 3: What is Web 2.0 in Science? (Concept & Frameworks)
+         Section: What is Web 2.0 (Blush Pink Section Background)
          =================================================================== -->
-    <section id="web2-concept" class="section-padding" style="padding-top: 20px;">
+    <section id="web2-concept" class="section-padding blush-section">
       <div class="container">
-        <div class="concept-wrapper">
-          <div class="section-header" style="margin-bottom: 24px;">
-            <div class="badge-pill teal">
-              <span>💡</span>
-              <span>Theoretical Framework</span>
-            </div>
-            <h2 class="section-title">What is Web 2.0 in Science Education?</h2>
-            <p class="section-desc">
-              Web 2.0 signifies the transition from the static "read-only" internet into a participatory, collaborative "read-write-experiment" ecosystem where learners co-construct scientific understanding.
-            </p>
+        <div class="section-head-center">
+          <div class="pill-badge" style="margin-bottom: 12px;">
+            <span>💡</span>
+            <span>Theoretical Framework</span>
           </div>
-
-          <div class="concept-grid">
-            <div class="comparison-box box-web1">
-              <h4 style="color: var(--text-muted); margin-bottom: 8px;">Traditional Web 1.0 (Passive Consumption)</h4>
-              <p style="font-size: 0.88rem; color: var(--text-muted);">Static informational pages, PDF textbooks, and one-way didactic dissemination.</p>
-              <ul class="comparison-list">
-                <li>❌ <span>Student is a passive reader viewing static diagrams.</span></li>
-                <li>❌ <span>No real-time feedback loop between teacher and class.</span></li>
-                <li>❌ <span>Experiments are pre-recorded videos with fixed outcomes.</span></li>
-                <li>❌ <span>Isolation in learning with delayed paper assessments.</span></li>
-              </ul>
-            </div>
-
-            <div class="comparison-box box-web2">
-              <h4 style="color: var(--primary); margin-bottom: 8px;">Modern Web 2.0 (Active & Collaborative)</h4>
-              <p style="font-size: 0.88rem; color: var(--text-body);">Multi-directional interaction, shared digital experimentation, and instant formative assessment.</p>
-              <ul class="comparison-list">
-                <li>✅ <span>Student actively manipulates physical parameters and creates data.</span></li>
-                <li>✅ <span>Instant live response visualization for immediate teacher intervention.</span></li>
-                <li>✅ <span>Inquiry-driven simulations allow infinite non-destructive trials.</span></li>
-                <li>✅ <span>Asynchronous peer critique, collaborative problem-solving boards.</span></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Pedagogical Models Ribbons: SAMR & 5E -->
-          <div class="pedagogy-ribbon">
-            <div class="pedagogy-card">
-              <h4 style="font-size: 1rem; color: var(--text-title); display: flex; align-items: center; gap: 8px;">
-                <span>📈</span> SAMR Model Integration
-              </h4>
-              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">
-                Moving technology integration from functional substitution to pedagogical redefinition.
-              </p>
-              <div class="pedagogy-steps">
-                <span class="step-pill">Substitution (PDF Notes)</span>
-                <span class="step-pill">Augmentation (Live Polls)</span>
-                <span class="step-pill highlight">Modification (Video Measurement)</span>
-                <span class="step-pill highlight">Redefinition (Interactive Sims)</span>
-              </div>
-            </div>
-
-            <div class="pedagogy-card">
-              <h4 style="font-size: 1rem; color: var(--text-title); display: flex; align-items: center; gap: 8px;">
-                <span>🧬</span> Bybee's 5E Instructional Model
-              </h4>
-              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 6px;">
-                Scaffolding scientific discovery through structured inquiry stages.
-              </p>
-              <div class="pedagogy-steps">
-                <span class="step-pill highlight">1. Engage</span>
-                <span class="step-pill highlight">2. Explore</span>
-                <span class="step-pill">3. Explain</span>
-                <span class="step-pill highlight">4. Elaborate</span>
-                <span class="step-pill">5. Evaluate</span>
-              </div>
-            </div>
-          </div>
-
+          <h2>What is <span class="coral-text">Web 2.0</span> in Science Education?</h2>
+          <p>
+            Web 2.0 marks the evolution from passive "read-only" digital textbooks into participatory, collaborative spaces where students and educators actively co-investigate natural phenomena.
+          </p>
         </div>
+
+        <div class="concept-box-grid">
+          <div class="concept-card">
+            <h4 style="color: var(--text-muted); margin-bottom: 6px; font-size: 1.1rem;">Traditional Web 1.0 (Passive Dissemination)</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">One-way information delivery where students act as static observers.</p>
+            <ul class="concept-list">
+              <li>❌ <span>Student is a passive consumer reading static formula sheets.</span></li>
+              <li>❌ <span>No real-time diagnostic feedback between educator and students.</span></li>
+              <li>❌ <span>Experiments are pre-recorded video clips with fixed outcomes.</span></li>
+              <li>❌ <span>Delayed paper-based assessments without iterative improvement.</span></li>
+            </ul>
+          </div>
+
+          <div class="concept-card highlight">
+            <h4 style="color: var(--primary-coral); margin-bottom: 6px; font-size: 1.1rem;">Modern Web 2.0 (Active & Collaborative)</h4>
+            <p style="font-size: 0.88rem; color: var(--text-body);">Multi-directional inquiry, live data response, and interactive modeling.</p>
+            <ul class="concept-list">
+              <li>✅ <span>Student actively tests hypotheses and manipulates variables.</span></li>
+              <li>✅ <span>Instant live response dashboards reveal conceptual errors immediately.</span></li>
+              <li>✅ <span>Inquiry simulations permit infinite safe, non-destructive trials.</span></li>
+              <li>✅ <span>Collaborative problem-solving boards and asynchronous peer debate.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SAMR & 5E Instructional Model Badges -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 32px;">
+          <div style="background: #FFFFFF; border: 1.5px solid var(--border-pink); border-radius: 20px; padding: 22px;">
+            <h4 style="font-size: 0.98rem; margin-bottom: 6px;">📈 SAMR Model Integration</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">From functional substitution to full pedagogical redefinition in science.</p>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px;">
+              <span class="tool-tag" style="background: #F3F4F6; color: #4B5563; border: none;">Substitution</span>
+              <span class="tool-tag" style="background: #F3F4F6; color: #4B5563; border: none;">Augmentation</span>
+              <span class="tool-tag">Modification</span>
+              <span class="tool-tag" style="background: var(--primary-coral); color: #FFFFFF; border: none;">Redefinition</span>
+            </div>
+          </div>
+
+          <div style="background: #FFFFFF; border: 1.5px solid var(--border-pink); border-radius: 20px; padding: 22px;">
+            <h4 style="font-size: 0.98rem; margin-bottom: 6px;">🧬 Bybee's 5E Instructional Model</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">Scaffolding scientific discovery through structured inquiry phases.</p>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px;">
+              <span class="tool-tag">1. Engage</span>
+              <span class="tool-tag">2. Explore</span>
+              <span class="tool-tag" style="background: #F3F4F6; color: #4B5563; border: none;">3. Explain</span>
+              <span class="tool-tag">4. Elaborate</span>
+              <span class="tool-tag" style="background: #F3F4F6; color: #4B5563; border: none;">5. Evaluate</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- ===================================================================
-         Section 4: The 5 Web 2.0 Tools (Exhaustive Rubric-Compliant Showcase)
+         Section: 5 Web 2.0 Tools (Reference Image: "Mastery Bundle" Card Grid)
          =================================================================== -->
     <section id="tools" class="section-padding">
       <div class="container">
-        <div class="section-header">
-          <div class="badge-pill">
+        <div class="section-head-center">
+          <div class="pill-badge" style="margin-bottom: 12px;">
             <span>🛠️</span>
-            <span>Curated Toolkit</span>
+            <span>Mastery Toolkit</span>
           </div>
-          <h2 class="section-title">5 Web 2.0 Tools: Evaluations & Tutorials</h2>
-          <p class="section-desc">
-            Comprehensive breakdown of each platform, detailing core capabilities, limitations, pedagogical evaluations, step-by-step user tutorials, and authentic physics classroom applications.
+          <h2>Discover Our Curated <span class="coral-text">Web 2.0 Suite</span></h2>
+          <p>
+            In-depth academic evaluations, technical capabilities, candid limitations, and step-by-step practical guides for 5 transformative science platforms.
           </p>
         </div>
 
-        <!-- Tool Selection Tab Switcher -->
-        <div class="tools-nav-bar">
+        <!-- Navigation Tabs -->
+        <div class="tool-nav-tabs">
           <button class="tool-tab-btn active" data-tool="nearpod">
             <span>1. Nearpod</span>
             <span style="font-size: 0.75rem; opacity: 0.8;">(Live Assessment)</span>
@@ -304,20 +304,17 @@
         <div id="tool-nearpod" class="tool-detail-card active">
           <div class="tool-hero-box">
             <div>
-              <div class="tool-meta-header">
-                <div class="tool-index-badge">01</div>
-                <div>
-                  <h3 style="font-size: 1.8rem;">Nearpod</h3>
-                  <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Synchronous Interactive Lessons & Formative Intervention</p>
-                </div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <span class="tool-tag" style="font-size: 0.9rem; padding: 6px 14px;">Tool 01</span>
+                <h3 style="font-size: 1.8rem;">Nearpod</h3>
               </div>
-              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body); margin-top: 14px;">
-                Nearpod transforms traditional lecture slides into participatory digital experiences. In a physics lecture, student devices synchronize in real time with the teacher’s presentation. Built-in interactive checkpoints—such as drawing canvas widgets for free-body diagrams, polls, and open questions—enable live comprehension monitoring.
+              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body);">
+                Nearpod transforms passive slide decks into dynamic, multi-directional learning sessions. In a physics lecture, student devices synchronize in real time with the teacher's presentation. Embedded formative assessment widgets—such as "Draw It" canvas boards for free-body force diagrams and live polls—enable immediate intervention.
               </p>
-              <div style="margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap;">
-                <span class="badge-pill teal" style="font-size: 0.78rem;">Live Synchronous Mode</span>
-                <span class="badge-pill" style="font-size: 0.78rem;">"Draw It" Canvas</span>
-                <span class="badge-pill pink" style="font-size: 0.78rem;">Anonymous Peer Projection</span>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+                <span class="pill-badge" style="font-size: 0.76rem;">Live Synchronous Mode</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">"Draw It" Canvas</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Anonymous Peer Projection</span>
               </div>
             </div>
 
@@ -336,80 +333,66 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Technical Limitation:</span>
-                <span class="info-val" style="color: var(--pink);">Free-tier 40 students cap</span>
+                <span class="info-val" style="color: var(--primary-coral);">Free tier capped at 40 students</span>
               </div>
               <div class="info-row">
-                <span class="info-label">Website:</span>
-                <span class="info-val"><a href="https://nearpod.com" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">nearpod.com ↗</a></span>
+                <span class="info-label">Official Link:</span>
+                <span class="info-val"><a href="https://nearpod.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">nearpod.com ↗</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
-            <!-- Critical Evaluation (Rubric Component 2) -->
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📊</span> Critical Evaluation for Teaching & Learning
-              </h4>
-              <div class="bullet-points">
-                <div class="bullet-item">
-                  <strong>Student Engagement Dynamics:</strong> Eliminates passive disengagement. Students who hesitate to speak aloud in front of a lecture hall readily submit answers via their personal devices, dramatically raising participation rates across mixed-ability cohorts.
+            <div class="deep-box">
+              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Student Engagement Dynamics:</strong> Eliminates passive disengagement. Students who hesitate to speak aloud in a large lecture hall submit responses comfortably through their personal devices, dramatically raising participation across mixed-ability cohorts.
+              </p>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Cognitive Learning Outcomes:</strong> Accelerates concept mastery via instant diagnostic feedback. Eliminates the false impression of understanding, revealing whether students can actually apply formulas rather than simply listening.
+              </p>
+              <p style="font-size: 0.9rem;">
+                <strong>Instructional Strategies:</strong> Supports Peer Instruction (Mazur model): display the distribution of student responses anonymously, prompt peer discussion, and re-poll to consolidate comprehension.
+              </p>
+            </div>
+
+            <div class="deep-box">
+              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <div class="step-card">
+                <div class="step-num">01</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Teacher Lesson Preparation</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Log into Nearpod, upload slides on <em>Newton's Laws</em>, and insert interactive activities: click <strong>Add Content & Activities > Draw It</strong> (force vectors) and <strong>Open-Ended Question</strong>.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Cognitive Learning Outcomes:</strong> Accelerates conceptual mastery through instant diagnostic feedback. Eliminates the false impression of understanding, revealing whether students can actually apply formulas rather than simply listening.
+              </div>
+              <div class="step-card">
+                <div class="step-num">02</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Student Live Joining</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Educator launches <strong>Live Participation</strong> to generate a 5-character session code. Students navigate to <code>join.nearpod.com</code> on mobile or laptops, enter code, and sync immediately.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Instructional Strategies:</strong> Supports the Peer Instruction methodology (Mazur model): display the distribution of student responses anonymously, prompt peer discussion, and re-poll to consolidate comprehension.
-                </div>
-                <div class="bullet-item">
-                  <strong>Platform Limitations:</strong> Requires continuous internet access; complex 3D simulation elements can lag on entry-level mobile devices.
+              </div>
+              <div class="step-card">
+                <div class="step-num">03</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Formative Feedback & Intervention</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Teacher monitors live free-body diagram submissions, highlighting common misconceptions to push to all student screens for guided discussion.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Step-by-Step Practical Guidelines (Rubric Component 3) -->
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📝</span> Step-by-Step Implementation Guide
-              </h4>
-              <div class="tutorial-steps">
-                <div class="step-card">
-                  <div class="step-num">01</div>
-                  <div class="step-content">
-                    <h5>Teacher Lesson Preparation</h5>
-                    <p>Log in to Nearpod, upload PowerPoint/PDF slides on <em>Newton's Laws</em>, and insert interactive activities: click <strong>Add Content & Activities > Draw It</strong> (force vectors) and <strong>Open-Ended Question</strong>.</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">02</div>
-                  <div class="step-content">
-                    <h5>Student Live Joining</h5>
-                    <p>Educator launches <strong>Live Participation</strong> to generate a 5-character session code. Students navigate to <code>join.nearpod.com</code> on mobile or laptops, enter the code, and their screens immediately sync with the teacher.</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">03</div>
-                  <div class="step-content">
-                    <h5>Formative Feedback & Intervention</h5>
-                    <p>As students submit vector drawings, the teacher views all thumbnails in real time. The educator highlights exemplary or commonly mistaken free-body diagrams to push to all student screens for guided discussion.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Physics Classroom Scenario (Rubric Component 4) -->
-            <div class="physics-scenario-box">
-              <div class="scenario-header">
+            <div class="scenario-card-coral">
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
                 <span>⚛️</span> Physics Classroom Scenario: Newton's Third Law (Action-Reaction)
-              </div>
-              <div class="scenario-grid">
-                <div class="scenario-box">
-                  <h5 style="color: var(--pink); margin-bottom: 6px;">The Persistent Misconception</h5>
-                  <p>When asked: <em>"A heavy truck collides head-on with a small car. Which vehicle exerts a greater magnitude of force on the other?"</em>, typically over 70% of students mistakenly believe the heavier truck exerts a greater force.</p>
+              </h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: var(--primary-coral);">The Persistent Misconception:</strong>
+                  <p style="margin-top: 6px;">When asked: <em>"A heavy truck collides head-on with a small car. Which vehicle exerts a greater magnitude of force on the other?"</em>, over 70% of students mistakenly believe the heavier truck exerts a greater force.</p>
                 </div>
-                <div class="scenario-box">
-                  <h5 style="color: var(--mint); margin-bottom: 6px;">The Nearpod Intervention</h5>
-                  <p>The teacher launches a Live Poll. Seeing the 75% error rate on the live dashboard, the teacher pauses the lecture, projects the formula $F_{A\text{ on }B} = -F_{B\text{ on }A}$, and asks students to re-draw contact force vectors on the <em>Draw It</em> canvas until 95% mastery is achieved.</p>
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: #10B981;">The Nearpod Intervention:</strong>
+                  <p style="margin-top: 6px;">The teacher launches a Live Poll. Seeing the error rate, the teacher pauses the lecture, projects $F_{A\text{ on }B} = -F_{B\text{ on }A}$, and asks students to re-draw contact force vectors on the <em>Draw It</em> canvas until 95% mastery is achieved.</p>
                 </div>
               </div>
             </div>
@@ -420,20 +403,17 @@
         <div id="tool-socrative" class="tool-detail-card">
           <div class="tool-hero-box">
             <div>
-              <div class="tool-meta-header">
-                <div class="tool-index-badge">02</div>
-                <div>
-                  <h3 style="font-size: 1.8rem;">Socrative</h3>
-                  <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Real-Time Student Response System & Mastery Matrix</p>
-                </div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <span class="tool-tag" style="font-size: 0.9rem; padding: 6px 14px;">Tool 02</span>
+                <h3 style="font-size: 1.8rem;">Socrative</h3>
               </div>
-              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body); margin-top: 14px;">
+              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body);">
                 Socrative is a lightweight, high-speed Student Response System (SRS) designed for immediate formative diagnostics, exit tickets, and gamified team competitions. It provides an instantaneous color-coded question-by-question matrix that shows exactly which physics calculations are challenging for the class.
               </p>
-              <div style="margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap;">
-                <span class="badge-pill teal" style="font-size: 0.78rem;">Quick Question Polling</span>
-                <span class="badge-pill" style="font-size: 0.78rem;">Space Race Gamification</span>
-                <span class="badge-pill pink" style="font-size: 0.78rem;">Instant Color-Coded Matrix</span>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+                <span class="pill-badge" style="font-size: 0.76rem;">Quick Question Polling</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Space Race Gamification</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Instant Color-Coded Matrix</span>
               </div>
             </div>
 
@@ -452,77 +432,66 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Technical Limitation:</span>
-                <span class="info-val" style="color: var(--pink);">Limited LaTeX math rendering</span>
+                <span class="info-val" style="color: var(--primary-coral);">Limited LaTeX math rendering</span>
               </div>
               <div class="info-row">
-                <span class="info-label">Website:</span>
-                <span class="info-val"><a href="https://socrative.com" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">socrative.com ↗</a></span>
+                <span class="info-label">Official Link:</span>
+                <span class="info-val"><a href="https://socrative.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">socrative.com ↗</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📊</span> Critical Evaluation for Teaching & Learning
-              </h4>
-              <div class="bullet-points">
-                <div class="bullet-item">
-                  <strong>Student Engagement Dynamics:</strong> Features the "Space Race" module where students form teams to propel colorful rockets across the board by solving physics calculations correctly, sparking friendly and engaging peer motivation.
+            <div class="deep-box">
+              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Student Engagement Dynamics:</strong> Features the "Space Race" module where students form teams to propel colorful rockets across the board by solving physics calculations correctly, sparking friendly and engaging peer motivation.
+              </p>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Learning Outcomes:</strong> Generates concrete quantitative mastery data. The live results matrix immediately highlights which specific sub-skills require review.
+              </p>
+              <p style="font-size: 0.9rem;">
+                <strong>Instructional Strategies:</strong> Enables Just-in-Time Teaching (JiTT). Educators run a 5-minute pre-lecture diagnostic and tailor the lesson focus based on real student gaps.
+              </p>
+            </div>
+
+            <div class="deep-box">
+              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <div class="step-card">
+                <div class="step-num">01</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Authoring Diagnostic Quizzes</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Go to Socrative, click <strong>Quizzes > Add Quiz</strong>. Create 4 multiple choice and short-answer calculation questions on <em>Conservation of Mechanical Energy</em>.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Learning Outcomes:</strong> Generates concrete quantitative mastery data. The live results matrix immediately highlights which specific sub-skills (e.g., distinguishing scalar speed from vector velocity) require review.
+              </div>
+              <div class="step-card">
+                <div class="step-num">02</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Launching Room for Students</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Click <strong>Launch > Quiz</strong>, select "Instant Feedback" mode. Students join at <code>b.socrative.com/login/student/</code> by entering the teacher's room name.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Instructional Strategies:</strong> Enables Just-in-Time Teaching (JiTT). Educators run a 5-minute pre-lecture diagnostic and tailor the lesson focus based on real student gaps.
-                </div>
-                <div class="bullet-item">
-                  <strong>Platform Limitations:</strong> Basic formatting does not natively render complex mathematical integrals or multi-line equations in the standard quiz builder.
+              </div>
+              <div class="step-card">
+                <div class="step-num">03</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Live Matrix Analysis & Excel Export</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Monitor the live grid. Questions showing red blocks across majority students are flagged. Export the final class performance report to Excel for longitudinal tracking.</p>
                 </div>
               </div>
             </div>
 
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📝</span> Step-by-Step Implementation Guide
-              </h4>
-              <div class="tutorial-steps">
-                <div class="step-card">
-                  <div class="step-num">01</div>
-                  <div class="step-content">
-                    <h5>Authoring Diagnostic Quizzes</h5>
-                    <p>Go to Socrative, click <strong>Quizzes > Add Quiz</strong>. Create 4 multiple choice and short-answer calculation questions on <em>Conservation of Mechanical Energy</em>.</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">02</div>
-                  <div class="step-content">
-                    <h5>Launching Room for Students</h5>
-                    <p>Click <strong>Launch > Quiz</strong>, select "Instant Feedback" mode with question shuffling. Students join at <code>b.socrative.com/login/student/</code> by entering the teacher's room name (e.g. <code>UITMPHYSICS</code>).</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">03</div>
-                  <div class="step-content">
-                    <h5>Live Matrix Analysis & Excel Export</h5>
-                    <p>Monitor the live grid. Questions showing red blocks across majority students are flagged. Export the final class performance report to Excel for longitudinal tracking.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="physics-scenario-box">
-              <div class="scenario-header">
+            <div class="scenario-card-coral">
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
                 <span>⚛️</span> Physics Classroom Scenario: Conservation of Mechanical Energy
-              </div>
-              <div class="scenario-grid">
-                <div class="scenario-box">
-                  <h5 style="color: var(--pink); margin-bottom: 6px;">The Problematic Calculation</h5>
-                  <p>Students are asked to calculate the velocity of a 500g bob at the bottom of a 2m pendulum released from rest at $60^\circ$ angle ($v = \sqrt{2g(L - L\cos\theta)}$).</p>
+              </h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: var(--primary-coral);">The Problematic Calculation:</strong>
+                  <p style="margin-top: 6px;">Students are asked to calculate the velocity of a 500g bob at the bottom of a 2m pendulum released from rest at $60^\circ$ angle ($v = \sqrt{2g(L - L\cos\theta)}$).</p>
                 </div>
-                <div class="scenario-box">
-                  <h5 style="color: var(--mint); margin-bottom: 6px;">The Socrative Diagnostic</h5>
-                  <p>The live matrix displays a 78% failure rate on Question 3. A quick review reveals students forgot to convert the height offset using $L(1 - \cos 60^\circ)$. The teacher immediately sketches the geometric trigonometry on the board, eliminating the error before moving forward.</p>
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: #10B981;">The Socrative Diagnostic:</strong>
+                  <p style="margin-top: 6px;">The live matrix displays a 78% failure rate on Question 3. A quick review reveals students forgot to convert height offset using $L(1 - \cos 60^\circ)$. The teacher immediately sketches the geometric trigonometry on the board.</p>
                 </div>
               </div>
             </div>
@@ -533,20 +502,17 @@
         <div id="tool-moodle" class="tool-detail-card">
           <div class="tool-hero-box">
             <div>
-              <div class="tool-meta-header">
-                <div class="tool-index-badge">03</div>
-                <div>
-                  <h3 style="font-size: 1.8rem;">Moodle</h3>
-                  <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Comprehensive Modular Science Learning Management System</p>
-                </div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <span class="tool-tag" style="font-size: 0.9rem; padding: 6px 14px;">Tool 03</span>
+                <h3 style="font-size: 1.8rem;">Moodle</h3>
               </div>
-              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body); margin-top: 14px;">
+              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body);">
                 Moodle represents the ultimate digital backbone for a complete academic semester. It provides a structured, asynchronous repository for scientific lecture notes, asynchronous peer discussion forums, LaTeX equation-enabled numerical quizzes, structured assignment grading rubrics, and automated progress tracking.
               </p>
-              <div style="margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap;">
-                <span class="badge-pill teal" style="font-size: 0.78rem;">Modular Course Repository</span>
-                <span class="badge-pill" style="font-size: 0.78rem;">LaTeX Formula Quizzes</span>
-                <span class="badge-pill pink" style="font-size: 0.78rem;">Rubric Grading & Forums</span>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+                <span class="pill-badge" style="font-size: 0.76rem;">Modular Course Repository</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">LaTeX Formula Quizzes</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Rubric Grading & Forums</span>
               </div>
             </div>
 
@@ -565,77 +531,66 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Technical Limitation:</span>
-                <span class="info-val" style="color: var(--pink);">Requires hosting & server setup</span>
+                <span class="info-val" style="color: var(--primary-coral);">Requires hosting & server setup</span>
               </div>
               <div class="info-row">
-                <span class="info-label">Website:</span>
-                <span class="info-val"><a href="https://moodle.org" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">moodle.org ↗</a></span>
+                <span class="info-label">Official Link:</span>
+                <span class="info-val"><a href="https://moodle.org" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">moodle.org ↗</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📊</span> Critical Evaluation for Teaching & Learning
-              </h4>
-              <div class="bullet-points">
-                <div class="bullet-item">
-                  <strong>Student Engagement Dynamics:</strong> Extends academic discourse outside physical class hours. Discussion forums allow in-depth peer dialogue on challenging scientific proofs and lab report methodologies.
+            <div class="deep-box">
+              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Student Engagement Dynamics:</strong> Extends academic discourse outside physical class hours. Discussion forums allow in-depth peer dialogue on challenging scientific proofs and lab report methodologies.
+              </p>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Learning Outcomes:</strong> Supports individualized learning pathways through conditional activity completion (e.g. students must score $>70\%$ on a diagnostic quiz before advanced course modules unlock).
+              </p>
+              <p style="font-size: 0.9rem;">
+                <strong>Instructional Strategies:</strong> Ideal for Flipped Classroom architectures. Foundational theory videos and slide packs are reviewed at home, preserving physical laboratory sessions for hands-on experimentation.
+              </p>
+            </div>
+
+            <div class="deep-box">
+              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <div class="step-card">
+                <div class="step-num">01</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Module Architecture & Setup</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">In Moodle, toggle <strong>Turn Editing On</strong>. Create a structured module titled <em>"PHY150: Waves & Optics"</em>, adding PDF lecture handouts, embedded simulation links, and formula sheets.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Learning Outcomes:</strong> Supports individualized learning pathways through conditional activity completion (e.g. students must score $>70\%$ on a diagnostic quiz before advanced course modules unlock).
+              </div>
+              <div class="step-card">
+                <div class="step-num">02</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Collaborative Forum & Assignment</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Add a <strong>Forum</strong> activity titled <em>"Physics Problem of the Week"</em> requiring each student to post one worked problem solution and evaluate two classmates' derivation steps.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Instructional Strategies:</strong> Ideal for Flipped Classroom architectures. Foundational theory videos and slide packs are reviewed at home, preserving physical laboratory sessions for hands-on experimentation.
-                </div>
-                <div class="bullet-item">
-                  <strong>Platform Limitations:</strong> Steeper initial learning curve for instructors; interface customization requires deliberate design to prevent visual clutter.
+              </div>
+              <div class="step-card">
+                <div class="step-num">03</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Rubric-Based PDF Assessment</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Educator uses the built-in PDF grader to annotate student laboratory reports, highlight mathematical vector errors, and assign rubric scores directly synced to the gradebook.</p>
                 </div>
               </div>
             </div>
 
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📝</span> Step-by-Step Implementation Guide
-              </h4>
-              <div class="tutorial-steps">
-                <div class="step-card">
-                  <div class="step-num">01</div>
-                  <div class="step-content">
-                    <h5>Module Architecture & Setup</h5>
-                    <p>In Moodle, toggle <strong>Turn Editing On</strong>. Create a structured module titled <em>"PHY150: Waves & Optics"</em>, adding PDF lecture handouts, embedded simulation links, and formula sheets.</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">02</div>
-                  <div class="step-content">
-                    <h5>Collaborative Forum & Assignment</h5>
-                    <p>Add a <strong>Forum</strong> activity titled <em>"Physics Problem of the Week"</em> requiring each student to post one worked problem solution and evaluate two classmates' derivation steps.</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">03</div>
-                  <div class="step-content">
-                    <h5>Rubric-Based PDF Assessment</h5>
-                    <p>Educator uses the built-in PDF grader to annotate student laboratory reports, highlight mathematical vector errors, and assign rubric scores that sync directly with the central gradebook.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="physics-scenario-box">
-              <div class="scenario-header">
+            <div class="scenario-card-coral">
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
                 <span>⚛️</span> Physics Classroom Scenario: Wave Superposition & Interference
-              </div>
-              <div class="scenario-grid">
-                <div class="scenario-box">
-                  <h5 style="color: var(--pink); margin-bottom: 6px;">The Classroom Challenge</h5>
-                  <p>Class lectures cannot allocate sufficient individual time for each student to grasp the derivation of constructive and destructive interference paths ($\Delta x = n\lambda$ vs $\Delta x = (n + \frac{1}{2})\lambda$).</p>
+              </h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: var(--primary-coral);">The Classroom Challenge:</strong>
+                  <p style="margin-top: 6px;">Lectures cannot allocate sufficient individual time for each student to grasp the derivation of constructive and destructive interference paths ($\Delta x = n\lambda$ vs $\Delta x = (n + \frac{1}{2})\lambda$).</p>
                 </div>
-                <div class="scenario-box">
-                  <h5 style="color: var(--mint); margin-bottom: 6px;">The Moodle Forum Solution</h5>
-                  <p>An asynchronous forum challenge prompts students to analyze noise-canceling headphones using phase difference $(\Delta \phi = \pi)$. Students post mathematical proofs, debate real-world acoustic scenarios, and receive peer validation under the instructor's moderation.</p>
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: #10B981;">The Moodle Forum Solution:</strong>
+                  <p style="margin-top: 6px;">An asynchronous forum challenge prompts students to analyze noise-canceling headphones using phase difference $(\Delta \phi = \pi)$. Students post mathematical proofs and receive peer validation.</p>
                 </div>
               </div>
             </div>
@@ -646,20 +601,17 @@
         <div id="tool-pivot" class="tool-detail-card">
           <div class="tool-hero-box">
             <div>
-              <div class="tool-meta-header">
-                <div class="tool-index-badge">04</div>
-                <div>
-                  <h3 style="font-size: 1.8rem;">Pivot Interactives</h3>
-                  <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">High-Speed Direct Measurement Video & Quantitative Analysis</p>
-                </div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <span class="tool-tag" style="font-size: 0.9rem; padding: 6px 14px;">Tool 04</span>
+                <h3 style="font-size: 1.8rem;">Pivot Interactives</h3>
               </div>
-              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body); margin-top: 14px;">
+              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body);">
                 Pivot Interactives bridges physical laboratories and digital tools through Direct Measurement Video (DMV). Rather than simplified animations, it features authentic high-speed videos of real-world physical experiments equipped with calibrated digital stopwatches, scalable rulers, and dynamic graphing regression tools.
               </p>
-              <div style="margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap;">
-                <span class="badge-pill teal" style="font-size: 0.78rem;">Direct Measurement Video</span>
-                <span class="badge-pill" style="font-size: 0.78rem;">Calibrated Digital Overlays</span>
-                <span class="badge-pill pink" style="font-size: 0.78rem;">Dynamic Linear Regression</span>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+                <span class="pill-badge" style="font-size: 0.76rem;">Direct Measurement Video</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Calibrated Digital Overlays</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Dynamic Linear Regression</span>
               </div>
             </div>
 
@@ -678,77 +630,66 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Technical Limitation:</span>
-                <span class="info-val" style="color: var(--pink);">Paid subscription required</span>
+                <span class="info-val" style="color: var(--primary-coral);">Paid subscription required</span>
               </div>
               <div class="info-row">
-                <span class="info-label">Website:</span>
-                <span class="info-val"><a href="https://pivotinteractives.com" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">pivotinteractives.com ↗</a></span>
+                <span class="info-label">Official Link:</span>
+                <span class="info-val"><a href="https://pivotinteractives.com" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">pivotinteractives.com ↗</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📊</span> Critical Evaluation for Teaching & Learning
-              </h4>
-              <div class="bullet-points">
-                <div class="bullet-item">
-                  <strong>Student Engagement Dynamics:</strong> Grants students genuine experimental agency. Learners independently select video parameters (e.g. angle of inclination, cart mass, fluid viscosity) and collect unique empirical data sets.
+            <div class="deep-box">
+              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Student Engagement Dynamics:</strong> Grants students genuine experimental agency. Learners independently select video parameters (e.g. angle of inclination, cart mass, fluid viscosity) and collect unique empirical data sets.
+              </p>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Learning Outcomes:</strong> Develops rigorous scientific reasoning. Because data points come from actual video footage, students experience authentic experimental error, instrument precision, and curve fitting.
+              </p>
+              <p style="font-size: 0.9rem;">
+                <strong>Instructional Strategies:</strong> Enables experiments that are too fast, dangerous, or costly to replicate in school laboratories (e.g. high-speed projectile explosions or ballistic pendulums).
+              </p>
+            </div>
+
+            <div class="deep-box">
+              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <div class="step-card">
+                <div class="step-num">01</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Assigning Science Investigations</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Educator selects the <em>"Determining Gravitational Acceleration ($g$)"</em> experiment from the Pivot library and distributes it to the student section with custom inquiry prompts.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Learning Outcomes:</strong> Develops rigorous scientific reasoning. Because data points come from actual video footage, students experience authentic experimental error, instrument precision, and curve fitting.
+              </div>
+              <div class="step-card">
+                <div class="step-num">02</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Frame-by-Frame Video Measurement</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Student opens the video, overlays the calibrated on-screen ruler and stopwatch, and steps through the video frame-by-frame ($\Delta t = 0.033\text{ s}$), logging vertical position $y$ versus time $t$.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Instructional Strategies:</strong> Enables experiments that are too fast, dangerous, or costly to replicate in school laboratories (e.g. high-speed projectile explosions or relativistic electron deflection).
-                </div>
-                <div class="bullet-item">
-                  <strong>Platform Limitations:</strong> Higher bandwidth requirements for streaming high-definition high-framerate video recordings.
+              </div>
+              <div class="step-card">
+                <div class="step-num">03</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Dynamic Graphing & Slope Derivation</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Student plots $y$ vs. $t^2$ in the integrated data table, applies linear regression, and derives experimental $g$ from the slope ($m = \frac{1}{2}g$), completing the built-in error analysis.</p>
                 </div>
               </div>
             </div>
 
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📝</span> Step-by-Step Implementation Guide
-              </h4>
-              <div class="tutorial-steps">
-                <div class="step-card">
-                  <div class="step-num">01</div>
-                  <div class="step-content">
-                    <h5>Assigning Science Investigations</h5>
-                    <p>Educator selects the <em>"Determining Gravitational Acceleration ($g$)"</em> experiment from the Pivot library and distributes it to the student section with custom inquiry prompts.</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">02</div>
-                  <div class="step-content">
-                    <h5>Frame-by-Frame Video Measurement</h5>
-                    <p>Student opens the video, overlays the calibrated on-screen ruler and stopwatch, and steps through the video frame-by-frame ($\Delta t = 0.033\text{ s}$), logging vertical position $y$ versus time $t$.</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">03</div>
-                  <div class="step-content">
-                    <h5>Dynamic Graphing & Slope Derivation</h5>
-                    <p>Student plots $y$ vs. $t^2$ in the integrated data table, applies linear regression, and derives experimental $g$ from the slope ($m = \frac{1}{2}g$), completing the built-in error analysis.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="physics-scenario-box">
-              <div class="scenario-header">
+            <div class="scenario-card-coral">
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
                 <span>⚛️</span> Physics Classroom Scenario: 2D Momentum in Collisions
-              </div>
-              <div class="scenario-grid">
-                <div class="scenario-box">
-                  <h5 style="color: var(--pink); margin-bottom: 6px;">The Laboratory Limitation</h5>
-                  <p>In-person school air tables frequently suffer from friction degradation, leveling misalignment, and camera parallax errors that distort 2D velocity vectors.</p>
+              </h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: var(--primary-coral);">The Laboratory Limitation:</strong>
+                  <p style="margin-top: 6px;">In-person school air tables frequently suffer from friction degradation, leveling misalignment, and camera parallax errors that distort 2D velocity vectors.</p>
                 </div>
-                <div class="scenario-box">
-                  <h5 style="color: var(--mint); margin-bottom: 6px;">The Pivot Interactives Solution</h5>
-                  <p>Students inspect high-speed overhead videos of colliding pucks. Using calibrated coordinate axes, they measure velocity vectors before and after impact, proving that despite kinetic energy loss, momentum components ($\sum p_x$ and $\sum p_y$) remain strictly conserved.</p>
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: #10B981;">The Pivot Interactives Solution:</strong>
+                  <p style="margin-top: 6px;">Students inspect high-speed overhead videos of colliding pucks. Using calibrated coordinate axes, they measure velocity vectors before and after impact, proving that momentum components ($\sum p_x$ and $\sum p_y$) remain strictly conserved.</p>
                 </div>
               </div>
             </div>
@@ -759,20 +700,17 @@
         <div id="tool-phet" class="tool-detail-card">
           <div class="tool-hero-box">
             <div>
-              <div class="tool-meta-header">
-                <div class="tool-index-badge">05</div>
-                <div>
-                  <h3 style="font-size: 1.8rem;">PhET Interactive Simulations</h3>
-                  <p style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Exploratory Inquiry-Based Learning & Dynamic Physical Modeling</p>
-                </div>
+              <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <span class="tool-tag" style="font-size: 0.9rem; padding: 6px 14px;">Tool 05</span>
+                <h3 style="font-size: 1.8rem;">PhET Interactive Simulations</h3>
               </div>
-              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body); margin-top: 14px;">
+              <p style="font-size: 0.95rem; line-height: 1.7; color: var(--text-body);">
                 PhET Interactive Simulations (University of Colorado Boulder) represents the premier open-source inquiry sandbox in STEM. By animating invisible phenomena—like moving electrons, magnetic flux, and thermal molecular collisions—it allows students to discover scientific laws through intuitive parameter manipulation.
               </p>
-              <div style="margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap;">
-                <span class="badge-pill teal" style="font-size: 0.78rem;">100% Free & Open-Source</span>
-                <span class="badge-pill" style="font-size: 0.78rem;">Variable Isolation Sliders</span>
-                <span class="badge-pill pink" style="font-size: 0.78rem;">Multiple Symbolic Representations</span>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+                <span class="pill-badge" style="font-size: 0.76rem;">100% Free & Open-Source</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Variable Isolation Sliders</span>
+                <span class="pill-badge" style="font-size: 0.76rem;">Multiple Symbolic Representations</span>
               </div>
             </div>
 
@@ -791,77 +729,66 @@
               </div>
               <div class="info-row">
                 <span class="info-label">Technical Limitation:</span>
-                <span class="info-val" style="color: var(--pink);">No built-in gradebook (needs LMS)</span>
+                <span class="info-val" style="color: var(--primary-coral);">No built-in gradebook (needs LMS)</span>
               </div>
               <div class="info-row">
-                <span class="info-label">Website:</span>
-                <span class="info-val"><a href="https://phet.colorado.edu" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: underline;">phet.colorado.edu ↗</a></span>
+                <span class="info-label">Official Link:</span>
+                <span class="info-val"><a href="https://phet.colorado.edu" target="_blank" rel="noopener" style="color: var(--primary-coral); text-decoration: underline;">phet.colorado.edu ↗</a></span>
               </div>
             </div>
           </div>
 
           <div class="tool-deep-grid">
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📊</span> Critical Evaluation for Teaching & Learning
-              </h4>
-              <div class="bullet-points">
-                <div class="bullet-item">
-                  <strong>Student Engagement Dynamics:</strong> Intuitive gamified sandbox encourages active "what-if" experimentation. Learners freely explore without the anxiety of damaging physical apparatus or burning out components.
+            <div class="deep-box">
+              <h4><span>📊</span> Critical Evaluation for Teaching & Learning</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Student Engagement Dynamics:</strong> Intuitive gamified sandbox encourages active "what-if" experimentation. Learners freely explore without the anxiety of damaging physical apparatus or burning out components.
+              </p>
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">
+                <strong>Learning Outcomes:</strong> Bridges conceptual abstraction. Microscopic behaviors (like electron flow in circuits) and mathematical symbols are visualized simultaneously, reducing cognitive load.
+              </p>
+              <p style="font-size: 0.9rem;">
+                <strong>Instructional Strategies:</strong> Perfectly aligned with the <em>Explore</em> phase of the 5E Model. Supports Guided Inquiry where students discover relationships prior to formal lectures.
+              </p>
+            </div>
+
+            <div class="deep-box">
+              <h4><span>📝</span> Step-by-Step Implementation Guide</h4>
+              <div class="step-card">
+                <div class="step-num">01</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Selecting Simulation & Scaffolding</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Educator navigates to PhET and selects <strong>Circuit Construction Kit: DC</strong>. Prepares a guided inquiry prompt: <em>"How does increasing voltage affect circuit current when resistance remains constant?"</em></p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Learning Outcomes:</strong> Bridges conceptual abstraction. Microscopic behaviors (like electron flow in circuits) and mathematical symbols are visualized simultaneously, reducing cognitive load.
+              </div>
+              <div class="step-card">
+                <div class="step-num">02</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Interactive Virtual Circuit Assembly</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Students assemble virtual batteries, wires, resistors, and multimeters. By adjusting battery voltage from $2\text{V}$ to $12\text{V}$, they observe accelerated electron animations in real time.</p>
                 </div>
-                <div class="bullet-item">
-                  <strong>Instructional Strategies:</strong> Perfectly aligned with the <em>Explore</em> phase of the 5E Model. Supports Guided Inquiry where students discover relationships prior to formal lectures.
-                </div>
-                <div class="bullet-item">
-                  <strong>Platform Limitations:</strong> Does not possess integrated student account management; must be paired with external worksheets or LMS assignments for assessment tracking.
+              </div>
+              <div class="step-card">
+                <div class="step-num">03</div>
+                <div>
+                  <h5 style="font-size: 0.95rem; margin-bottom: 3px;">Formulating Ohm's Law</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-body);">Students tabulate $V$ and $I$ values, plot a linear voltage-current graph, calculate the constant slope, and derive <strong>Ohm's Law ($V = IR$)</strong> autonomously.</p>
                 </div>
               </div>
             </div>
 
-            <div class="deep-card">
-              <h4 class="card-subtitle">
-                <span>📝</span> Step-by-Step Implementation Guide
-              </h4>
-              <div class="tutorial-steps">
-                <div class="step-card">
-                  <div class="step-num">01</div>
-                  <div class="step-content">
-                    <h5>Selecting Simulation & Scaffolding</h5>
-                    <p>Educator navigates to PhET and selects <strong>Circuit Construction Kit: DC</strong>. Prepares a guided inquiry prompt: <em>"How does increasing voltage affect circuit current when resistance remains constant?"</em></p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">02</div>
-                  <div class="step-content">
-                    <h5>Interactive Virtual Circuit Assembly</h5>
-                    <p>Students assemble virtual batteries, wires, resistors, and digital multimeters. By adjusting battery voltage slider from $2\text{V}$ to $12\text{V}$, they observe the accelerated blue electron animation in real time.</p>
-                  </div>
-                </div>
-                <div class="step-card">
-                  <div class="step-num">03</div>
-                  <div class="step-content">
-                    <h5>Formulating Ohm's Law</h5>
-                    <p>Students tabulate $V$ and $I$ values, plot a linear voltage-current graph, calculate the constant slope, and derive <strong>Ohm's Law ($V = IR$)</strong> autonomously before the teacher presents the formula.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="physics-scenario-box">
-              <div class="scenario-header">
+            <div class="scenario-card-coral">
+              <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;">
                 <span>⚛️</span> Physics Classroom Scenario: Faraday's Law of Electromagnetic Induction
-              </div>
-              <div class="scenario-grid">
-                <div class="scenario-box">
-                  <h5 style="color: var(--pink); margin-bottom: 6px;">The Invisible Field Problem</h5>
-                  <p>Understanding magnetic flux change ($\frac{d\Phi_B}{dt}$) generating an induced electromotive force ($\mathcal{E}$) is extremely abstract when taught purely from 2D textbook drawings.</p>
+              </h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: var(--primary-coral);">The Invisible Field Problem:</strong>
+                  <p style="margin-top: 6px;">Understanding magnetic flux change ($\frac{d\Phi_B}{dt}$) generating an induced electromotive force ($\mathcal{E}$) is extremely abstract when taught purely from 2D textbook drawings.</p>
                 </div>
-                <div class="scenario-box">
-                  <h5 style="color: var(--mint); margin-bottom: 6px;">The PhET Interactive Experience</h5>
-                  <p>In PhET's <em>Faraday's Lab</em>, students move a virtual bar magnet through a pickup coil. They immediately see the voltmeter deflect and light bulb illuminate proportional to magnet speed, providing instant visual causality of electromagnetic induction.</p>
+                <div style="background: #FFFFFF; padding: 18px; border-radius: 16px; border: 1px solid var(--border-pink);">
+                  <strong style="color: #10B981;">The PhET Interactive Experience:</strong>
+                  <p style="margin-top: 6px;">In PhET's <em>Faraday's Lab</em>, students move a virtual bar magnet through a pickup coil. They immediately see the voltmeter deflect and light bulb illuminate proportional to magnet speed, providing instant visual causality.</p>
                 </div>
               </div>
             </div>
@@ -872,30 +799,29 @@
     </section>
 
     <!-- ===================================================================
-         Section 5: Academic E-Portfolio (Adriana Alya Binti Jefri)
+         Section: Academic E-Portfolio (Reference Image: Review/Profile Style)
          =================================================================== -->
     <section id="portfolio" class="section-padding" style="background: #FFFFFF;">
       <div class="container">
-        <div class="section-header">
-          <div class="badge-pill pink">
-            <span>🎀</span>
+        <div class="section-head-center">
+          <div class="pill-badge" style="margin-bottom: 12px;">
+            <span>🌸</span>
             <span>Academic Identity</span>
           </div>
-          <h2 class="section-title">Author E-Portfolio: Adriana Alya</h2>
-          <p class="section-desc">
+          <h2>Author E-Portfolio: <span class="coral-text">Adriana Alya</span></h2>
+          <p>
             Diploma in Science graduate from Universiti Teknologi MARA (UiTM), combining analytical rigor with digital science pedagogy and data handling competencies.
           </p>
         </div>
 
-        <div class="portfolio-card">
+        <div class="portfolio-master-card">
           <div class="portfolio-grid">
             
-            <!-- Sidebar with Profile Details from CV -->
             <div class="portfolio-sidebar">
-              <div class="author-avatar">👩‍🔬</div>
-              <h3>Adriana Alya Binti Jefri</h3>
-              <p class="author-role">Science Educator & Data Specialist</p>
-              <span class="badge-pill" style="font-size: 0.78rem;">UiTM Diploma in Science</span>
+              <div class="avatar-wrapper">👩‍🔬</div>
+              <h3 style="font-size: 1.5rem;">Adriana Alya Binti Jefri</h3>
+              <p style="color: var(--primary-coral); font-weight: 700; font-size: 0.92rem;">Science Educator & Data Specialist</p>
+              <span class="tool-tag" style="background: #FFFFFF;">UiTM Diploma in Science</span>
 
               <ul class="author-contact-list">
                 <li><span>📧</span> <strong>Email:</strong> adrianajefri95@gmail.com</li>
@@ -905,68 +831,55 @@
               </ul>
 
               <div style="margin-top: 14px; width: 100%;">
-                <a href="i. cv resume_ADRIANA ALYA BINTI JEFRI.pdf" target="_blank" class="btn btn-primary btn-sm" style="width: 100%;">
+                <a href="i. cv resume_ADRIANA ALYA BINTI JEFRI.pdf" target="_blank" class="btn btn-coral btn-sm" style="width: 100%;">
                   <span>Download Full CV (PDF)</span>
                   <span>📄</span>
                 </a>
               </div>
             </div>
 
-            <!-- Main Academic Background & Experience -->
-            <div class="portfolio-main">
-              <div class="bio-section">
-                <h4><span>💡</span> Pedagogical Philosophy</h4>
-                <p class="bio-text">
+            <div class="portfolio-content">
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 8px;"><span>💡</span> Pedagogical Philosophy</h4>
+                <p style="font-size: 0.94rem; line-height: 1.7; color: var(--text-body);">
                   "Science is fundamentally an active inquiry into how nature behaves, not a static collection of formulas to be memorized. In modern education, Web 2.0 technologies transition students from passive listeners into active investigators, fostering collaborative dialogue, safe simulation of invisible physical phenomena, and immediate formative intervention."
                 </p>
               </div>
 
-              <div class="bio-section">
-                <h4><span>🎓</span> Academic Background</h4>
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <span class="timeline-year">2020 – 2023</span>
-                    <h5 class="timeline-title">Universiti Teknologi MARA (UiTM)</h5>
-                    <p class="timeline-desc">Diploma in Science — Comprehensive coursework in Physics, Chemistry, Calculus, and Laboratory Methodologies.</p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="timeline-year">2015 – 2019</span>
-                    <h5 class="timeline-title">SMK Saujana Utama</h5>
-                    <p class="timeline-desc">Sijil Pelajaran Malaysia (SPM) — Pure Science Stream.</p>
-                  </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 12px;"><span>🎓</span> Academic Background</h4>
+                <div class="timeline-item">
+                  <span style="font-size: 0.78rem; font-weight: 700; color: var(--primary-coral);">2020 – 2023</span>
+                  <h5 style="font-size: 0.98rem; font-weight: 700;">Universiti Teknologi MARA (UiTM)</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">Diploma in Science — Comprehensive coursework in Physics, Chemistry, Calculus, and Laboratory Methodologies.</p>
+                </div>
+                <div class="timeline-item">
+                  <span style="font-size: 0.78rem; font-weight: 700; color: var(--primary-coral);">2015 – 2019</span>
+                  <h5 style="font-size: 0.98rem; font-weight: 700;">SMK Saujana Utama</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">Sijil Pelajaran Malaysia (SPM) — Pure Science Stream.</p>
                 </div>
               </div>
 
-              <div class="bio-section">
-                <h4><span>💼</span> Professional & Analytical Experience</h4>
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <span class="timeline-year">July 2024 – December 2024</span>
-                    <h5 class="timeline-title">Department of Statistics Malaysia (DOSM), Selangor</h5>
-                    <p class="timeline-desc">
-                      <strong>Personnel (MySTEP E19 – Processing & Analysis Unit):</strong> Verified and analyzed 20,289 agricultural census records using the MyAgriCensus system. Collaborated across regional reporting teams to achieve a 100% KPI for assigned districts and 98.4% state-level KPI.
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="timeline-year">2022 – Present</span>
-                    <h5 class="timeline-title">Retail Operations & Team Management</h5>
-                    <p class="timeline-desc">
-                      Experience with Petron, Secret Recipe, and 7-Eleven managing inventory systems (FIFO), shift coordination, customer service, and daily POS reconciliation.
-                    </p>
-                  </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 12px;"><span>💼</span> Professional & Analytical Experience</h4>
+                <div class="timeline-item">
+                  <span style="font-size: 0.78rem; font-weight: 700; color: var(--primary-coral);">July 2024 – December 2024</span>
+                  <h5 style="font-size: 0.98rem; font-weight: 700;">Department of Statistics Malaysia (DOSM), Selangor</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">
+                    <strong>Personnel (MySTEP E19 – Processing & Analysis Unit):</strong> Verified and analyzed 20,289 agricultural census records using the MyAgriCensus system. Collaborated across regional reporting teams to achieve a 100% KPI for assigned districts and 98.4% state-level KPI.
+                  </p>
                 </div>
               </div>
 
-              <div class="bio-section">
-                <h4><span>⚡</span> Core Competencies</h4>
-                <div class="skills-pill-wrap">
-                  <span class="skill-tag">Large-Scale Data Validation</span>
-                  <span class="skill-tag">Scientific Methodology</span>
-                  <span class="skill-tag">Web 2.0 Digital Pedagogy</span>
-                  <span class="skill-tag">Microsoft Office (Advanced)</span>
-                  <span class="skill-tag">Adobe Photoshop</span>
-                  <span class="skill-tag">Critical Problem Solving</span>
-                  <span class="skill-tag">Team Leadership</span>
+              <div>
+                <h4 style="font-size: 1.1rem; color: var(--primary-coral); margin-bottom: 10px;"><span>⚡</span> Core Competencies</h4>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <span class="skill-tag-pill">Large-Scale Data Validation</span>
+                  <span class="skill-tag-pill">Scientific Methodology</span>
+                  <span class="skill-tag-pill">Web 2.0 Digital Pedagogy</span>
+                  <span class="skill-tag-pill">Microsoft Office (Advanced)</span>
+                  <span class="skill-tag-pill">Adobe Photoshop</span>
+                  <span class="skill-tag-pill">Critical Problem Solving</span>
                 </div>
               </div>
 
@@ -978,53 +891,53 @@
     </section>
 
     <!-- ===================================================================
-         Section 6: Rubric Quality Assurance (March 2026 Checklist)
+         Section: Rubric Quality Assurance (March 2026 Checklist)
          =================================================================== -->
-    <section id="rubric" class="section-padding">
+    <section id="rubric" class="section-padding blush-section">
       <div class="container">
-        <div class="rubric-card">
+        <div style="background: #FFFFFF; border: 2px solid var(--border-pink); border-radius: 28px; padding: 36px; box-shadow: var(--shadow-card);">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
             <div>
-              <div class="badge-pill teal" style="margin-bottom: 8px;">
+              <div class="pill-badge" style="margin-bottom: 8px;">
                 <span>📋</span>
                 <span>Self-Assessment Verification</span>
               </div>
               <h3 style="font-size: 1.6rem;">March 2026 E-Portfolio Rubric Compliance</h3>
             </div>
-            <span class="badge-pill" style="background: var(--mint-light); color: var(--mint); font-weight: 800;">
+            <span class="pill-badge" style="background: #D1FAE5; color: #059669; border-color: #A7F3D0; font-weight: 800;">
               Target Score: 4 / 4 (Excellent)
             </span>
           </div>
 
-          <div class="rubric-grid">
-            <div class="rubric-item">
-              <span class="rubric-score">Criterion 1 • Level 4</span>
-              <span class="rubric-name">Tool Description & Features</span>
-              <p class="rubric-desc">Comprehensive and structured analysis of 5 tools, covering technical functions, pedagogical scope, and explicit limitations.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-top: 24px;">
+            <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 1 • Level 4</span>
+              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Tool Description & Features</h5>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">Comprehensive structured analysis of 5 tools, covering technical functions, pedagogical scope, and explicit limitations.</p>
             </div>
 
-            <div class="rubric-item">
-              <span class="rubric-score">Criterion 2 • Level 4</span>
-              <span class="rubric-name">Critical Evaluation of T&L</span>
-              <p class="rubric-desc">Strong analytical evaluation demonstrating how each tool drives engagement, improves learning outcomes, and fits SAMR/5E.</p>
+            <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 2 • Level 4</span>
+              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Critical Evaluation of T&L</h5>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">Strong analytical evaluation demonstrating how each tool drives engagement, improves learning outcomes, and fits SAMR/5E.</p>
             </div>
 
-            <div class="rubric-item">
-              <span class="rubric-score">Criterion 3 • Level 4</span>
-              <span class="rubric-name">Guidelines on Using Tool</span>
-              <p class="rubric-desc">Clear, numbered step-by-step guidance for both educators and students covering lesson setup, execution, and intervention.</p>
+            <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 3 • Level 4</span>
+              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Guidelines on Using Tool</h5>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">Clear, numbered step-by-step guidance for educators and students covering lesson setup, execution, and intervention.</p>
             </div>
 
-            <div class="rubric-item">
-              <span class="rubric-score">Criterion 4 • Level 4</span>
-              <span class="rubric-name">Analytical Discussion</span>
-              <p class="rubric-desc">Substantive physics classroom scenarios illustrating how each tool resolves real-world conceptual friction in STEM.</p>
+            <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 4 • Level 4</span>
+              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Analytical Discussion</h5>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">Substantive physics classroom scenarios illustrating how each tool resolves real-world conceptual friction in STEM.</p>
             </div>
 
-            <div class="rubric-item">
-              <span class="rubric-score">Criterion 5 • Level 4</span>
-              <span class="rubric-name">Academic Quality & Writing</span>
-              <p class="rubric-desc">Rigorous academic prose, zero grammatical errors, clear typographic hierarchy, and formal educational terminology.</p>
+            <div style="background: #FFF8F9; border: 1px solid var(--border-pink); border-radius: 18px; padding: 18px;">
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-coral); text-transform: uppercase;">Criterion 5 • Level 4</span>
+              <h5 style="font-size: 0.95rem; margin: 6px 0 4px 0;">Academic Quality & Writing</h5>
+              <p style="font-size: 0.82rem; color: var(--text-muted);">Rigorous academic prose, zero grammatical errors, clear typographic hierarchy, and formal educational terminology.</p>
             </div>
           </div>
         </div>
@@ -1033,28 +946,29 @@
   </main>
 
   <!-- ===================================================================
-       Footer (UiTM Accreditation, Contact, Social Links from Sketch)
+       Footer (Matching Dribbble Reference: Soft Blush Pink Tint)
        =================================================================== -->
-  <footer class="footer">
+  <footer class="footer-coral">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>⚛️ chime-piece<span style="color: var(--primary-light);">.</span></h3>
+          <h3 style="display: flex; align-items: center; gap: 8px;">
+            <span>chime-piece</span>
+            <span class="brand-dot"></span>
+          </h3>
           <p>
             An academic e-portfolio and Web 2.0 digital learning guide developed for science educators and learners.
           </p>
-          <div style="margin-top: 18px; display: flex; gap: 8px;">
-            <span class="badge-pill" style="background: rgba(255,255,255,0.1); color: #FFFFFF; border-color: rgba(255,255,255,0.2); font-size: 0.75rem;">
-              UiTM Diploma in Science
-            </span>
+          <div style="margin-top: 16px;">
+            <span class="tool-tag" style="background: #FFFFFF;">UiTM Diploma in Science</span>
           </div>
         </div>
 
-        <div class="footer-links">
-          <h4>Platform Navigation</h4>
-          <ul class="footer-menu">
+        <div>
+          <h4 style="font-size: 1.05rem; margin-bottom: 16px;">Platform Navigation</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-body);">
             <li><a href="#home">Home & Physics Sandbox</a></li>
-            <li><a href="#purpose">Purpose of Web 2.0</a></li>
+            <li><a href="#purpose">Areas of Involvement</a></li>
             <li><a href="#web2-concept">Theoretical Pedagogical Models</a></li>
             <li><a href="#tools">5 Web Tools Directory</a></li>
             <li><a href="#portfolio">Author Academic E-Portfolio</a></li>
@@ -1062,9 +976,9 @@
           </ul>
         </div>
 
-        <div class="footer-contact">
-          <h4>Author Contact & Credits</h4>
-          <ul class="footer-menu">
+        <div>
+          <h4 style="font-size: 1.05rem; margin-bottom: 16px;">Author Contact & Credits</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-body);">
             <li><strong>Author:</strong> Adriana Alya Binti Jefri</li>
             <li><strong>Email:</strong> adrianajefri95@gmail.com</li>
             <li><strong>Institution:</strong> Universiti Teknologi MARA (UiTM)</li>
