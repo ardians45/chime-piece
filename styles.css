@@ -894,6 +894,82 @@ a {
   margin-top: 24px;
 }
 
+.tutorial-section-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--border-pink);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  margin-top: 24px;
+}
+
+.benefit-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--border-pink);
+  border-radius: 18px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(255, 117, 130, 0.05);
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  border-color: var(--primary-coral);
+  box-shadow: 0 8px 22px rgba(255, 117, 130, 0.12);
+}
+
+.benefit-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.benefit-role-educator {
+  background: #FFE2E7;
+  color: var(--primary-coral);
+  border: 1px solid #FFCCD5;
+}
+
+.benefit-role-student {
+  background: #E0F2FE;
+  color: #0284C7;
+  border: 1px solid #BAE6FD;
+}
+
+.benefit-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-list li {
+  font-size: 0.87rem;
+  color: var(--text-body);
+  line-height: 1.55;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.benefit-bullet-icon {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.benefit-list li strong {
+  color: var(--text-title);
+}
+
 .video-container {
   position: relative;
   width: 100%;
