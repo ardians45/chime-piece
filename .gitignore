@@ -1,0 +1,8 @@
+# OS & Editor
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Raw WhatsApp Upload Artifacts (Clean copies organized in assets/)
+WhatsApp Unknown 2026-11-15 at 20.26.02/
+foto adriana.jpg

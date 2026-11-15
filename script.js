@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initToolTabs();
   initNavScroll();
   initMobileNav();
+  initImageLightbox();
 });
 
 /* ===================================================================
@@ -325,6 +326,48 @@ function initMobileNav() {
       navLinks.style.padding = '20px';
       navLinks.style.boxShadow = '0 12px 32px rgba(255, 117, 130, 0.18)';
       navLinks.style.border = '1.5px solid #FFE2E7';
+    }
+  });
+}
+
+/* ===================================================================
+   5. Tutorial Infographic Lightbox / Image Zoom Viewer
+   =================================================================== */
+function initImageLightbox() {
+  const images = document.querySelectorAll('.tutorial-img-card img');
+  if (!images.length) return;
+
+  const modal = document.createElement('div');
+  modal.className = 'lightbox-modal';
+  modal.innerHTML = `
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <img src="" alt="Enlarged Tutorial Infographic" class="lightbox-img">
+      <button class="lightbox-close" aria-label="Close image">&times;</button>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  const modalImg = modal.querySelector('.lightbox-img');
+  const backdrop = modal.querySelector('.lightbox-backdrop');
+  const closeBtn = modal.querySelector('.lightbox-close');
+
+  function closeModal() {
+    modal.classList.remove('active');
+  }
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      modalImg.src = img.src;
+      modal.classList.add('active');
+    });
+  });
+
+  backdrop.addEventListener('click', closeModal);
+  closeBtn.addEventListener('click', closeModal);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
     }
   });
 }
