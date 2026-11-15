@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7582"/>
+      <stop offset="100%" stop-color="#FF8A95"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#FF7582" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Mark Container -->
+  <rect x="15" y="15" width="70" height="70" rx="20" fill="#FFF0F3" stroke="#FFE2E7" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Atomic Orbit Science Icon -->
+  <g transform="translate(50, 50)">
+    <circle cx="0" cy="0" r="4.5" fill="#FF7582"/>
+    <ellipse cx="0" cy="0" rx="20" ry="8.5" fill="none" stroke="#FF7582" stroke-width="2.5" transform="rotate(30)"/>
+    <ellipse cx="0" cy="0" rx="20" ry="8.5" fill="none" stroke="#FF7582" stroke-width="2.5" transform="rotate(-30)"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="102" y="60" font-family="'Plus Jakarta Sans', 'Outfit', system-ui, sans-serif" font-size="34" font-weight="800" fill="#0F172A" letter-spacing="-0.5">chime-piece</text>
+  <circle cx="316" cy="56" r="5" fill="#FF7582"/>
+</svg>
