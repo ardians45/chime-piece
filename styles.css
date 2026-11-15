@@ -742,12 +742,69 @@ a {
 
 .step-card {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 12px;
   background: #FFF8F9;
-  border: 1px solid var(--border-pink);
-  padding: 16px 20px;
-  border-radius: 16px;
-  margin-bottom: 12px;
+  border: 1.5px solid var(--border-pink);
+  padding: 18px 20px;
+  border-radius: 18px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.step-card:hover {
+  border-color: var(--primary-coral);
+  box-shadow: 0 8px 20px rgba(255, 117, 130, 0.12);
+  transform: translateY(-2px);
+}
+
+.step-header {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.step-media-slot {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1.5px dashed #FFCCD5;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  gap: 6px;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.step-media-slot:hover {
+  border-color: var(--primary-coral);
+  background: #FFF5F7;
+}
+
+.step-media-slot img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.slot-tag {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.76rem;
+  color: var(--primary-coral);
+  background: #FFE8ED;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
 }
 
 .step-num {
