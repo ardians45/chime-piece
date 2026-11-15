@@ -62,6 +62,45 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
+  background-color: #FFF5F7;
+  background-image: 
+    linear-gradient(rgba(255, 250, 251, 0.72), rgba(255, 245, 247, 0.8)),
+    url('assets/bg/bg-stars-dreamy.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.4s ease;
+}
+
+/* User-Selected Background Themes */
+body.theme-stars-dreamy {
+  background-image: 
+    linear-gradient(rgba(255, 250, 251, 0.72), rgba(255, 245, 247, 0.8)),
+    url('assets/bg/bg-stars-dreamy.jpg');
+}
+
+body.theme-pink-aura {
+  background-image: 
+    linear-gradient(rgba(255, 250, 251, 0.65), rgba(255, 245, 247, 0.75)),
+    url('assets/bg/bg-pink-aura.jpg');
+}
+
+body.theme-pink-waves {
+  background-image: 
+    linear-gradient(rgba(255, 250, 251, 0.7), rgba(255, 245, 247, 0.8)),
+    url('assets/bg/bg-pink-waves.jpg');
+}
+
+body.theme-stars-cute {
+  background-image: 
+    linear-gradient(rgba(255, 250, 251, 0.74), rgba(255, 245, 247, 0.82)),
+    url('assets/bg/bg-stars-cute.jpg');
+}
+
+body.theme-clean-blush {
+  background-image: none;
+  background-color: var(--bg-page);
 }
 
 /* Ambient Soft Glow in Background */
@@ -579,7 +618,9 @@ a {
    Section: What is Web 2.0 (Blush Pink Section Background)
    =================================================================== */
 .blush-section {
-  background: var(--bg-blush-section);
+  background: rgba(255, 240, 243, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-top: 1px solid var(--border-pink);
   border-bottom: 1px solid var(--border-pink);
 }
@@ -1184,6 +1225,113 @@ a {
 .lightbox-close:hover {
   transform: scale(1.1);
   background: var(--primary-coral-dark);
+}
+
+/* Floating Background Switcher Widget */
+.bg-switcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bg-switcher-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid var(--border-pink);
+  border-radius: 30px;
+  padding: 10px 18px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-title);
+  box-shadow: 0 8px 24px rgba(255, 117, 130, 0.22);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.bg-switcher-toggle:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-coral);
+  box-shadow: 0 12px 30px rgba(255, 117, 130, 0.32);
+}
+
+.bg-switcher-menu {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  right: 0;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid var(--border-pink);
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: 0 16px 40px rgba(255, 117, 130, 0.25);
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  width: 240px;
+}
+
+.bg-switcher-menu.active {
+  display: flex;
+}
+
+.bg-switcher-title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--primary-coral);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 8px;
+  margin-bottom: 2px;
+}
+
+.bg-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #FFF8F9;
+  border: 1px solid var(--border-pink);
+  border-radius: 12px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-title);
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: left;
+  width: 100%;
+}
+
+.bg-option-btn:hover {
+  background: #FFE2E7;
+  border-color: var(--primary-coral);
+  transform: translateX(2px);
+}
+
+.bg-option-btn.active {
+  background: var(--primary-coral);
+  color: #FFFFFF;
+  border-color: var(--primary-coral);
+}
+
+.bg-preview-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
 }
 
 /* Responsive */

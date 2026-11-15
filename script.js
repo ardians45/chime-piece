@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavScroll();
   initMobileNav();
   initImageLightbox();
+  initBackgroundSwitcher();
 });
 
 /* ===================================================================
@@ -369,5 +370,65 @@ function initImageLightbox() {
     if (e.key === 'Escape' && modal.classList.contains('active')) {
       closeModal();
     }
+  });
+}
+
+/* ===================================================================
+   6. Background Theme Switcher
+   =================================================================== */
+function initBackgroundSwitcher() {
+  const toggleBtn = document.getElementById('bgSwitcherToggle');
+  const menu = document.getElementById('bgSwitcherMenu');
+  const optionBtns = document.querySelectorAll('.bg-option-btn');
+  if (!toggleBtn || !menu) return;
+
+  // Toggle Menu
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#bgSwitcher')) {
+      menu.classList.remove('active');
+    }
+  });
+
+  // Apply Theme Function
+  function setTheme(bgKey) {
+    document.body.className = document.body.className.replace(/\btheme-[^\s]+\b/g, '').trim();
+    if (bgKey !== 'clean-blush') {
+      document.body.classList.add(`theme-${bgKey}`);
+    } else {
+      document.body.classList.add('theme-clean-blush');
+    }
+
+    optionBtns.forEach(btn => {
+      if (btn.dataset.bg === bgKey) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    try {
+      localStorage.setItem('chime_bg_theme', bgKey);
+    } catch (_) {}
+  }
+
+  // Load Saved Theme (or default to stars-dreamy)
+  let savedTheme = 'stars-dreamy';
+  try {
+    savedTheme = localStorage.getItem('chime_bg_theme') || 'stars-dreamy';
+  } catch (_) {}
+  setTheme(savedTheme);
+
+  // Click handler for options
+  optionBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const bg = btn.dataset.bg;
+      setTheme(bg);
+      menu.classList.remove('active');
+    });
   });
 }

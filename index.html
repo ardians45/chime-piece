@@ -1274,7 +1274,7 @@
     <!-- ===================================================================
          Section: Academic E-Portfolio (Adriana Alya Binti Jefri)
          =================================================================== -->
-    <section id="portfolio" class="section-padding" style="background: #FFFFFF;">
+    <section id="portfolio" class="section-padding" style="background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
       <div class="container">
         <div class="section-head-center">
           <div class="pill-badge" style="margin-bottom: 12px;">
@@ -1500,6 +1500,37 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating Background Theme Switcher -->
+  <aside class="bg-switcher" id="bgSwitcher">
+    <div class="bg-switcher-menu" id="bgSwitcherMenu" aria-label="Background Theme Options">
+      <div class="bg-switcher-title">Background Theme</div>
+      <button class="bg-option-btn active" data-bg="stars-dreamy">
+        <span class="bg-preview-swatch" style="background-image: url('assets/bg/bg-stars-dreamy.jpg');"></span>
+        <span>Dreamy Stars</span>
+      </button>
+      <button class="bg-option-btn" data-bg="pink-aura">
+        <span class="bg-preview-swatch" style="background-image: url('assets/bg/bg-pink-aura.jpg');"></span>
+        <span>Soft Pink Aura</span>
+      </button>
+      <button class="bg-option-btn" data-bg="pink-waves">
+        <span class="bg-preview-swatch" style="background-image: url('assets/bg/bg-pink-waves.jpg');"></span>
+        <span>Pink Waves</span>
+      </button>
+      <button class="bg-option-btn" data-bg="stars-cute">
+        <span class="bg-preview-swatch" style="background-image: url('assets/bg/bg-stars-cute.jpg');"></span>
+        <span>Cute Big Stars</span>
+      </button>
+      <button class="bg-option-btn" data-bg="clean-blush">
+        <span class="bg-preview-swatch" style="background: #FFF5F7;"></span>
+        <span>Clean Blush</span>
+      </button>
+    </div>
+    <button class="bg-switcher-toggle" id="bgSwitcherToggle" aria-label="Change Background Theme" title="Pilih Background">
+      <svg class="svg-icon svg-icon-sm text-coral" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+      <span>Pilih BG</span>
+    </button>
+  </aside>
 
   <!-- Scripts -->
   <script src="script.js"></script>
